@@ -14,6 +14,7 @@ export default function Home() {
         <Head>
           <title>Joakim - that's me!</title>
           <link rel="icon" href="/favicon.ico" />
+
         </Head>
 
         <main className={styles.main}>
@@ -24,7 +25,7 @@ export default function Home() {
             <h1>menu</h1>
           </nav>
           <h1 className={styles.title}>
-            Hello, <strong>I'm Joakim!</strong>
+            Hey there, <strong>I'm Joakim!</strong>
           </h1>
 
           <h2 className={styles.description}>

@@ -1,8 +1,9 @@
 import Head from "next/head";
 import Image from "next/image"
+import React, { useEffect, useState } from "react";
 
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
-import React, { useEffect, useState } from "react";
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiaGV5dGhlcmVqb2FraW0iLCJhIjoiY2trY2o4OGZ3MDExazJvcG14aWhyemJvYyJ9.h2SsCAvtnNRvCd_aPM1CjA';
 
 export default function Contact() {
@@ -26,8 +27,7 @@ export default function Contact() {
             setErrorMessage('Please enter valid email!')
         } else {
             setErrorMessage(null)
-            console.log("inside", booleanMail);
-            setClicked(!clicked)
+            // skicka som mail till migi! 
         }
     }
 
@@ -39,6 +39,13 @@ export default function Contact() {
             center: [13.91, 60.75],
             zoom: 4,
         });
+        var marker = new mapboxgl.Marker({
+            color: "#ff3232",
+        })
+            .setLngLat([10.745298, 59.911735])
+            .setPopup(new mapboxgl.Popup({ offset: 25 })
+                .setHTML('<h1>Hey there from Oslo!</h1> <img src="joakim.png" alt="male working" />'))
+            .addTo(map);
     }, [])
 
     return (
@@ -51,41 +58,49 @@ export default function Contact() {
                     <h1>Let's connect!</h1>
                     <section className="contact__info-text-accounts">
                         <div className="contact__info-text-accounts-images">
-                            <div className="image">
-                                <Image
-                                    src="/../public/github-sign.png"
-                                    alt="Github Icon"
-                                    width={50}
-                                    height={50}
-                                    margin={10}
-                                />
-                                <p>Github</p>
-                            </div>
-                            <div className="image">
-                                <Image
-                                    src="/../public/linkedin.png"
-                                    alt="Linkedin Icon"
-                                    width={50}
-                                    height={50}
-                                />
-                                <p>Linkedin</p>
 
+                        <div className="image">
+                                <a href="https://www.linkedin.com/in/joakim-per-oskar-andersson/" target="_blank">
+                                    <Image
+                                        src="/../public/linkedin.png"
+                                        alt="Linkedin Icon"
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <p>Linkedin</p>
+                                </a>
                             </div>
+                            
                             <div className="image">
-                                <Image
-                                    src="/../public/instagram.png"
-                                    alt="Instagram Icon"
-                                    width={50}
-                                    height={50}
-                                />
-                                <p>Instagram</p>
+                                <a href="https://github.com/Joakim-Andersson" target="_blank">
+                                    <Image
+                                        src="/../public/github-sign.png"
+                                        alt="Github Icon"
+                                        width={50}
+                                        height={50}
+                                        margin={10}
+                                    />
+                                    <p>Github</p>
+                                </a>
+                            </div>
 
+                            <div className="image">
+                                <a href="https://www.instagram.com/heytherejoakim/" target="_blank">
+                                    <Image
+                                        src="/../public/instagram.png"
+                                        alt="Instagram Icon"
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <p>Instagram</p>
+                                </a>
                             </div>
                         </div>
                     </section>
                 </div>
                 <form className="contact__info-form">
-                    <h4>Don't hesitate to contact me using the form below</h4>
+                    <h4> <strong>Have a question or want to work together? <br /> </strong>
+                        Don't hesitate to contact me :) </h4>
                     <label>
                         <input className="inputfield" type="text" name="name" placeholder="Name" onChange={e => setNameField(e.target.value)} />
                     </label>
@@ -98,7 +113,7 @@ export default function Contact() {
                     <label>
                         <textarea className="messagefield" type="text" name="message" placeholder="Message" onChange={e => setMessage(e.target.value)} />
                     </label>
-                    {errorMessage && (<p className="contact__info-fom--error">{errorMessage}</p>)}
+                    {errorMessage && (<p className="contact__info-form--error">{errorMessage}</p>)}
                     <input className="submitbutton" type="submit" value="Send" onClick={(event) => handleOnClick(event)} />
                 </form>
             </section>
