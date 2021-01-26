@@ -130,6 +130,7 @@ textarea, input {
     justify-content: center;
     width: 40%;
     position: relative;
+    cursor: pointer;
 }
 
 .contact__map {

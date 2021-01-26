@@ -62,7 +62,7 @@ export default function Contact() {
                         <div className="image">
                                 <a href="https://www.linkedin.com/in/joakim-per-oskar-andersson/" target="_blank">
                                     <Image
-                                        src="/../public/linkedin.png"
+                                        src="/public/linkedin.png"
                                         alt="Linkedin Icon"
                                         width={50}
                                         height={50}
@@ -74,7 +74,7 @@ export default function Contact() {
                             <div className="image">
                                 <a href="https://github.com/Joakim-Andersson" target="_blank">
                                     <Image
-                                        src="/../public/github-sign.png"
+                                        src="/public/github-sign.png"
                                         alt="Github Icon"
                                         width={50}
                                         height={50}
@@ -87,7 +87,7 @@ export default function Contact() {
                             <div className="image">
                                 <a href="mailto:jjoakimm@hotmail.com">
                                     <Image
-                                        src="/../public/mail-bl.png"
+                                        src="/public/mail-bl.png"
                                         alt="Instagram Icon"
                                         width={50}
                                         height={50}

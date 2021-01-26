@@ -1,22 +1,15 @@
-import Head from 'next/head'
 import Link from "next/link";
-
 import styles from '../styles/Home.module.css'
-
 
 
 export default function Home() {
   return (
     <div className="stars">
-      <div class="small"></div>
-      <div class="medium"></div>
-      <div class="big"></div>
+      <div className="small"></div>
+      <div className="medium"></div>
+      <div className="big"></div>
 
       <div className={styles.container}>
-        <Head>
-          <title>Joakim - that's me!</title>
-          <link rel="icon" href="/joakim.png" />
-        </Head>
 
         <main className={styles.main}>
           <h1 className={styles.title}>
@@ -55,16 +48,8 @@ export default function Home() {
             </a>
           </div>
         </main>
-
         <footer className={styles.footer}>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-          </a>
+        <p>Copyright - Joakim 2021</p>
         </footer>
       </div>
     </div>

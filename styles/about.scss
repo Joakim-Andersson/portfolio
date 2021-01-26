@@ -9,8 +9,9 @@
 .about__text {
     width: 50%;
     color: white;
-    margin: 50px;
+    margin: 10px 50px;
     line-break: auto;
+    word-wrap: normal;
 }
 
 .about__text span {
@@ -24,46 +25,75 @@
 
 .giant-quotes-quote {
     display: inline-block;
-    font-family: sans-serif;
     margin: 1em;
-    max-width: 20em;
-    letter-spacing: 5px;
+    width: 85%;
     blockquote {
         display: inline-block;
         margin: 0;
         padding: 1em;
         position: relative;
         &:before {
-            color: #f90;
+            color: #0dfdd7;
             content: "\201C";
             font-size: 3em;
             left: 0;
-            line-height: .75em;
+            line-height: 0.75em;
             position: absolute;
             top: 0;
-            transform: scale(4, 4);
+            transform: scale(2, 3);
             transform-origin: top;
         }
         &:after {
-            color: #f90;
+            color: #0dfdd7;
             content: "\201E";
             font-size: 3em;
-            line-height: .75em;
+            line-height: 0.75em;
             position: absolute;
             right: 0;
             top: 0;
-            transform: scale(4, 4);
+            transform: scale(2, 3);
             transform-origin: top;
         }
-        >* {
+        > * {
             padding: 0 2em;
         }
         cite {
-            color: #c60;
+            color: #0dfdd7;
             display: block;
             font-style: normal;
-            text-align: right;
             text-transform: uppercase;
+        }
+        a {
+            text-decoration: none;
+            color: #0dfdd7;
+        }
+        h3 {
+            font-weight: 500;
+            font-size: 22px;
+            width: 100%;
+            text-align: center;
+            padding: 0 20px;
+            letter-spacing: 5px;
+        }
+        
+        h2 {
+            margin-top: 50px;
+            font-weight: 400;
+            font-size: 20px;
+        }
+
+        p {
+            line-height: 1.6em;
+            letter-spacing: 110%;
+            font-size: 18px;
+        }
+
+        .text__end {
+            text-decoration: none;
+            color: #0dfdd7;
+            letter-spacing: 1;
+            cursor: pointer;
         }
     }
 }
+

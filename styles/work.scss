@@ -1,0 +1,24 @@
+.work {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.work__text {
+    width: 50%;
+    color: white;
+    margin: 10px 50px;
+    line-break: auto;
+    word-wrap: normal;
+}
+
+.work__text span {
+    font-size: 3em;
+}
+
+.work__image {
+    width: 50%;
+    margin: 20px;
+}

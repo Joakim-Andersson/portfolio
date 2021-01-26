@@ -1,5 +1,11 @@
-export default function Skills() {
+import React from "react";
+import App from "../components/animate/App"
+
+export default function skills() {
     return (
-    <h1>My skills and experience!</h1>
-        )
-    }
+        <div className="skills">
+            <App />
+        </div>
+    );
+}
+
