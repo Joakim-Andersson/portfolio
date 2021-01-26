@@ -70,7 +70,7 @@ export default function Contact() {
                                     <p>Linkedin</p>
                                 </a>
                             </div>
-                            
+
                             <div className="image">
                                 <a href="https://github.com/Joakim-Andersson" target="_blank">
                                     <Image
@@ -87,12 +87,12 @@ export default function Contact() {
                             <div className="image">
                                 <a href="https://www.instagram.com/heytherejoakim/" target="_blank">
                                     <Image
-                                        src="/../public/instagram.png"
+                                        src="/../public/mail-bl.png"
                                         alt="Instagram Icon"
                                         width={50}
                                         height={50}
                                     />
-                                    <p>Instagram</p>
+                                    <p>Mail</p>
                                 </a>
                             </div>
                         </div>
