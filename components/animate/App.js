@@ -6,7 +6,7 @@ export default function App() {
 
   const items = [
     {style: "Frontend", one: "React", two: "CSS", three: "HTML", "four": "Webpack", "five":"Redux" },
-    {style: "Backend", one: "REST", two: "NodeJS", three: "MongoDB", "four": "PostgreSQL", "five": "ExpressJS"},
+    {style: "Backend", one: "REST", two: "NodeJS", three: "MongoDB", "four": "PostgreSQL", "five": "GraphQL"},
     {style: "Tools", one: "Figma", two: "Photoshop", three: "Git", "four": "Heroku", "five": "VSC"}
   ];
 
