@@ -1,0 +1,69 @@
+.about {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__text {
+    width: 50%;
+    color: white;
+    margin: 50px;
+    line-break: auto;
+}
+
+.about__text span {
+    font-size: 3em;
+}
+
+.about__image {
+    width: 50%;
+    margin: 20px;
+}
+
+.giant-quotes-quote {
+    display: inline-block;
+    font-family: sans-serif;
+    margin: 1em;
+    max-width: 20em;
+    letter-spacing: 5px;
+    blockquote {
+        display: inline-block;
+        margin: 0;
+        padding: 1em;
+        position: relative;
+        &:before {
+            color: #f90;
+            content: "\201C";
+            font-size: 3em;
+            left: 0;
+            line-height: .75em;
+            position: absolute;
+            top: 0;
+            transform: scale(4, 4);
+            transform-origin: top;
+        }
+        &:after {
+            color: #f90;
+            content: "\201E";
+            font-size: 3em;
+            line-height: .75em;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: scale(4, 4);
+            transform-origin: top;
+        }
+        >* {
+            padding: 0 2em;
+        }
+        cite {
+            color: #c60;
+            display: block;
+            font-style: normal;
+            text-align: right;
+            text-transform: uppercase;
+        }
+    }
+}

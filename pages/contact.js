@@ -37,7 +37,7 @@ export default function Contact() {
             container: "contact__map",
             style: "mapbox://styles/heytherejoakim/ckkcitaen2bsu18qvn7wqygor",
             center: [13.91, 60.75],
-            zoom: 4,
+            zoom: 4.5,
         });
         var marker = new mapboxgl.Marker({
             color: "#ff3232",
@@ -85,7 +85,7 @@ export default function Contact() {
                             </div>
 
                             <div className="image">
-                                <a href="https://www.instagram.com/heytherejoakim/" target="_blank">
+                                <a href="mailto:jjoakimm@hotmail.com">
                                     <Image
                                         src="/../public/mail-bl.png"
                                         alt="Instagram Icon"
@@ -118,7 +118,7 @@ export default function Contact() {
                 </form>
             </section>
             <section className="contact__map">
-                <div id="contact__map" style={{ height: 800, width: 600 }} />
+                <div id="contact__map" style={{ height: 800, width: 750 }} />
             </section>
         </div>
     )

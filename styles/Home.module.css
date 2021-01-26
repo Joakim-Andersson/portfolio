@@ -18,14 +18,6 @@
   color: white;
 }
 
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  top: 0;
-  position: fixed;
-  width: 100vw;
-}
 .main h1 {
   color: #0dfdd7;
 }

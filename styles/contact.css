@@ -1,12 +1,19 @@
 .contact {
     display: flex;
     flex-direction: row;
-    width: 100vw;
+    width: 100vw;   
 }
 
 .contact__info {
-    z-index: 1;
-    margin: 30px 0 0 60px;
+    z-index: 2;
+    margin: 50px 0 0 60px;
+    text-align: center;
+}
+
+.contact__info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
 }
 
@@ -51,13 +58,14 @@
 }
 
 .contact__info-form {
-    margin: 20px;
+    margin-top: 20px;
     border-radius: 5px;
     width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    background-color: #111316;
 }
 
 .contact__info-form h4 {
@@ -121,11 +129,11 @@ textarea, input {
     display: flex;
     justify-content: center;
     width: 40%;
-    float: right;
+    position: relative;
 }
 
 .contact__map {
-    z-index: 2;
+    z-index: 1;
     position: fixed;
     right: 0;
 }
@@ -148,20 +156,36 @@ textarea, input {
     padding: 5px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1070px) {
     .contact__map {
         visibility: hidden;
+        width: 0;
+    }
+    .contact {
+        display: flex;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0 0 0;
     }
     .contact__info {
-        position: absolute;
-        justify-content: center;
-        width: 100%;
-        margin-top: 30px;
+        position: relative;
+        margin: 30px 0;
     }
     .contact__info-form {
-        width: 80%;
-        margin: 10px;
-        position: absolute;
-        left: 50%;
+        position: relative;
+        justify-content: center;
+        justify-items: center;
+        align-self: center;
+        align-content: center;
+        width: 400px;
+        margin: 20px 0 !important;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact__info-form {
+        width: 350px;
     }
 }

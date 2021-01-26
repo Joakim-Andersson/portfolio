@@ -15,3 +15,36 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+body header,
+body [data-view] {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.7s ease-in;
+}
+body [data-view].active {
+  display: block;
+  opacity: 1;
+}
+body[data-nav='playground'] header {
+  display: block;
+  opacity: 1;
+}
+/* Home */
+[data-view='home'] {
+  height: 100%;
+}
+[data-view='home'] button {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.5s ease-in-out;
+}
+[data-view='home'] button.live {
+  opacity: 1;
+  pointer-events: all;
+}
+[data-view='home'] .mdc-layout-grid__cell--span-4.mdc-elevation--z4 {
+  padding: 1em;
+  background: #fff;
+}
