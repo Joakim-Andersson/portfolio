@@ -100,6 +100,11 @@
   height: 1em;
 }
 
+.skillsdiv {
+  width: 10%;
+  height: auto;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

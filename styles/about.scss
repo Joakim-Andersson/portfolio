@@ -1,67 +1,62 @@
 .about {
-    margin-top: 60px;
+    margin: 60px 0 0 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
 
-.about__text {
-    width: 50%;
-    color: white;
-    margin: 10px 50px;
-    line-break: auto;
-    word-wrap: normal;
-}
+    .about__text {
+        color: white;
+        margin: 10px 0 10px 25px;
+        line-break: auto;
+        word-wrap: normal;
+    }
+    .about__text span {
+        font-size: 3em;
+    }
+    .about__image {
+        margin: 20px;
+    }
 
-.about__text span {
-    font-size: 3em;
-}
-
-.about__image {
-    width: 50%;
-    margin: 20px;
-}
-
-.giant-quotes-quote {
-    display: inline-block;
-    margin: 1em;
-    width: 85%;
-    blockquote {
+    .giant-quotes-quote {
         display: inline-block;
-        margin: 0;
-        padding: 1em;
-        position: relative;
-        &:before {
-            color: #0dfdd7;
-            content: "\201C";
-            font-size: 3em;
-            left: 0;
-            line-height: 0.75em;
-            position: absolute;
-            top: 0;
-            transform: scale(2, 3);
-            transform-origin: top;
-        }
-        &:after {
-            color: #0dfdd7;
-            content: "\201E";
-            font-size: 3em;
-            line-height: 0.75em;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transform: scale(2, 3);
-            transform-origin: top;
-        }
-        > * {
-            padding: 0 2em;
-        }
-        cite {
-            color: #0dfdd7;
-            display: block;
-            font-style: normal;
-            text-transform: uppercase;
+        width: 600px;
+        blockquote {
+            display: inline-block;
+            margin: 0;
+            padding: 1em;
+            position: relative;
+            &:before {
+                color: #0dfdd7;
+                content: "\201C";
+                font-size: 3em;
+                left: 0;
+                line-height: 0.75em;
+                position: absolute;
+                top: 0;
+                transform: scale(2, 3);
+                transform-origin: top;
+            }
+            &:after {
+                color: #0dfdd7;
+                content: "\201E";
+                font-size: 3em;
+                line-height: 0.75em;
+                position: absolute;
+                right: 0;
+                top: 0;
+                transform: scale(2, 3);
+                transform-origin: top;
+            }
+            > * {
+                padding: 0 2em;
+            }
+            cite {
+                color: #0dfdd7;
+                display: block;
+                font-style: normal;
+                text-transform: uppercase;
+            }
         }
         a {
             text-decoration: none;
@@ -70,19 +65,19 @@
         h3 {
             font-weight: 500;
             font-size: 22px;
-            width: 100%;
             text-align: center;
             padding: 0 20px;
             letter-spacing: 5px;
         }
-        
+
         h2 {
-            margin-top: 50px;
+            margin-top: 30px;
             font-weight: 400;
             font-size: 20px;
         }
 
         p {
+            width: 420px;
             line-height: 1.6em;
             letter-spacing: 110%;
             font-size: 18px;
@@ -97,3 +92,102 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .about {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "image"
+            "text";
+        margin: 50px;
+        align-content: center;
+        align-items: center;
+        justify-self: center;
+        .about__text {
+            grid-area: text;
+            margin: 0px;
+            justify-self: center;
+            .giant-quotes-quote {
+                text-align: left;
+                width: 500px;
+                align-items: center;
+                justify-self: center;
+                justify-items: center;
+                align-self: center;
+                h3 {
+                    font-size: 1em;
+                }
+            }
+        }
+        .about__image {
+            grid-area: image;
+            width: 310px;
+            justify-self: center;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .about {
+        .about__text {
+            .giant-quotes-quote {
+                width: 80%;
+                align-content: center;
+                align-items: center;
+                justify-self: center;
+                justify-items: center;
+                align-self: center;
+                blockquote {
+                    padding: 5px;
+                    h3 {
+                        font-size: 1em;
+                        font-weight: 300;
+                        margin: 0px;
+                        padding: 10px 5px;
+                    }
+                    &:before {
+                        color: #0dfdd7;
+                        content: "\201C";
+                        font-size: 1em;
+                        left: 0;
+                        line-height: 0.75em;
+                        position: absolute;
+                        top: 0;
+                        transform: scale(2, 3);
+                        transform-origin: top;
+                    }
+                    &:after {
+                        color: #0dfdd7;
+                        content: "\201E";
+                        font-size: 1em;
+                        line-height: 0.75em;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        transform: scale(2, 3);
+                        transform-origin: top;
+                    }
+                    > * {
+                        padding: 0 2em;
+                    }
+                    cite {
+                        color: #0dfdd7;
+                        display: block;
+                        font-style: normal;
+                        text-transform: uppercase;
+                    }
+                    h2 {
+                        margin: 0 10px;
+                    }
+                    p {
+                        margin: 0 10px;
+                    }
+                }
+            }
+            .about__image {
+                width: 250px;
+            }
+        }
+    }
+}

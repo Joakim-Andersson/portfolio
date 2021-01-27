@@ -19,6 +19,7 @@ export default function Home() {
           <h2 className={styles.description}>
             I’m a fullstack developer who loves building user-friendly websites and apps!
           </h2>
+          
 
           <div className={styles.grid}>
 

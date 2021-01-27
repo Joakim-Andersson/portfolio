@@ -1,63 +1,249 @@
 .skills {
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    ul,
-    li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        border-radius: 0 !important;
-      }
+  display: flex;
 
-ul {
-    width: 600px;
+  .skills__backgrounds {
+    z-index: 1;
+    width: 120vw;
+    height: 170vh;
     display: flex;
-    flex-direction: column;
-    background: #0dfdd7;
-    padding: 15px;
-    border-radius: 0 !important;
-  }
-  
-  li {
-    background-color: rgba(0, 24, 16, 0.952);
-    padding: 10px;
-    margin-bottom: 10px;
-    overflow: hidden;
-    cursor: pointer;
-    .skills__style {
-    color: white;
-    border-radius: 0 !important;
+    flex-direction: row;
+    transform: rotate(10deg);
+    position: fixed;
+    left: -145px;
+    top: -140px;
+
+    .first__box {
+      width: 35%;
+      background-color: #2e2e2ec4;
+    }
+    .second__box {
+      width: 30%;
+      background-color: #2e2e2e57;
+      border: solid 1px #0dfdd7;
+    }
+    .third__box {
+      width: 35%;
+      background-color: #2e2e2e00;
     }
   }
-  
-  li:last-child {
-    margin-bottom: 0px;
-  }
-
-  .skills__style {
-    font-size: 20px;
-  }
-  
-  .skills__item-contentbox {
-      display: flex;
-      justify-content: center;
-  }
-  
-.skills__item-language {
-    margin: 0 20px;
-    width: 55px;
-}
-
-  .skills__item-content {
-    width: 100%;
-    height: 10px;
-    margin-top: 12px;
+  .skills__headers {
+    z-index: 5;
+    width: 100vw;
+    margin: 70px 25px 0 25px;
     color: white;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "Frontend Frontend Backend Backend Tools Tools"
+      "React Redux REST GraphQL Git Figma"
+      "HTML CSS NodeJS MongoDB Heroku VSC"
+      "Webpack NextJS PostgresQL ExpressJS Photoshop Hubspot";
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    align-items: center;
     justify-content: center;
+    align-content: center;
     text-align: center;
+
+    .skills__headers-text {
+      text-decoration: solid;
+      margin: 10px;
+      color: #0dfdd7;
+    }
+    .Frontend {
+      grid-area: Frontend;
+    }
+    .Backend {
+      grid-area: Backend;
+    }
+    .Tools {
+      grid-area: Tools;
+    }
+
+    .skills__icons-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50px;
+      height: auto;
+      justify-self: center;
+    }
+    .img {
+      margin: 0 20px;
+      width: 55px;
+    }
+    .skills__icons-boxtext {
+      color: white;
+      text-align: center;
+    }
+
+    // CSS-Grid areas
+    .CSS {
+      grid-area: CSS;
+    }
+    .HTML {
+      grid-area: HTML;
+    }
+    .Heroku {
+      grid-area: Heroku;
+    }
+    .NodeJS {
+      grid-area: NodeJS;
+    }
+    .Git {
+      grid-area: Git;
+    }
+    .Figma {
+      grid-area: Figma;
+    }
+    .GraphQL {
+      grid-area: GraphQL;
+    }
+    .MongoDB {
+      grid-area: MongoDB;
+    }
+    .PostgresQL {
+      grid-area: PostgresQL;
+    }
+    .React {
+      grid-area: React;
+    }
+    .REST {
+      grid-area: REST;
+    }
+    .Redux {
+      grid-area: Redux;
+    }
+    .Photoshop {
+      grid-area: Photoshop;
+    }
+    .Webpack {
+      grid-area: Webpack;
+    }
+    .VSC {
+      grid-area: VSC;
+    }
+    .Hubspot {
+      grid-area: Hubspot;
+    }
+    .NextJS {
+      grid-area: NextJS;
+    }
+    .ExpressJS {
+      grid-area: ExpressJS;
+      img {
+        filter: invert(100);
+      }
+    }
   }
 }
+
+@media (max-width: 1000px) {
+  .skills {
+    .skills__backgrounds {
+      .first__box {
+        background-color: transparent;
+      }
+      .second__box {
+        background-color: transparent;
+        border: none;
+      }
+      .third__box {
+        background-color: transparent;
+      }
+    }
+    .skills__headers {
+      z-index: 5;
+      width: 100vw;
+      margin: 70px 25px 0 25px;
+      color: white;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(100px, auto);
+      grid-template-areas:
+        "Frontend Frontend Frontend Frontend"
+        ".... React Redux ...."
+        ".... HTML CSS ...."
+        "....NextJS Webpack ...."
+        "Backend Backend Backend Backend"
+        ".... NodeJS ExpressJS ...."
+        ".... MongoDB PostgresQL ...."
+        ".... REST GraphQL ...."
+        "Tools Tools Tools Tools"
+        ".... Git Figma ...."
+        ".... Heroku VSC ...."
+        ".... Photoshop Hubspot ....";
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+    }
+  }
+}
+
+//------- Animated box --------
+// .skills {
+//     margin-top: 70px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+//     ul,
+//     li {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//         border-radius: 0 !important;
+//       }
+
+// ul {
+//     width: 600px;
+//     display: flex;
+//     flex-direction: column;
+//     background: #0dfdd7;
+//     padding: 15px;
+//     border-radius: 0 !important;
+//   }
+
+//   li {
+//     background-color: rgba(0, 24, 16, 0.952);
+//     padding: 10px;
+//     margin-bottom: 10px;
+//     overflow: hidden;
+//     cursor: pointer;
+//     .skills__style {
+//     color: white;
+//     border-radius: 0 !important;
+//     }
+//   }
+
+//   li:last-child {
+//     margin-bottom: 0px;
+//   }
+
+//   .skills__style {
+//     font-size: 20px;
+//   }
+
+//   .skills__item-contentbox {
+//       display: flex;
+//       justify-content: center;
+//   }
+
+// .skills__item-language {
+//     margin: 0 20px;
+//     width: 55px;
+// }
+
+//   .skills__item-content {
+//     width: 100%;
+//     height: 10px;
+//     margin-top: 12px;
+//     color: white;
+//     display: flex;
+//     justify-content: center;
+//     text-align: center;
+//   }
+// }
