@@ -1,19 +1,10 @@
 import Image from "next/image"
 
-export default function Skills() {
+export default function work() {
     return (
-        <section className="skills">
-            <div className="skills__text">
-                <p>hello</p>
-            </div>
-            <div className="skills__image">
-                <Image
-                    src="/github-sign.png"
-                    alt="Github Icon"
-                    width={50}
-                    height={50}
-                    margin={10}
-                />
+        <section className="work">
+            <div className="work__text">
+                <h1>Stuff is coming!</h1>
             </div>
         </section>
     )

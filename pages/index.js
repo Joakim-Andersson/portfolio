@@ -19,7 +19,7 @@ export default function Home() {
           <h2 className={styles.description}>
             I’m a fullstack developer who loves building user-friendly websites and apps!
           </h2>
-          
+
 
           <div className={styles.grid}>
 
@@ -43,13 +43,12 @@ export default function Home() {
             <a href="/skills" className={styles.card} >
               <h3>Skills &rarr;</h3>
               <p>
-                The frameworks, languages and programs i'm most confident in.
-            </p>
+                The frameworks, languages and programs i'm most confident in. </p>
             </a>
           </div>
         </main>
         <footer className={styles.footer}>
-          <p>Copyright - Joakim 2021</p>
+          <p>Copyright - Joakim Andersson 2021</p>
         </footer>
       </div>
     </div>

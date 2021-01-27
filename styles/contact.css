@@ -1,13 +1,16 @@
 .contact {
     display: flex;
     flex-direction: row;
-    width: 100vw;   
+    width: 80vw;
+    overflow: hidden !important;
 }
 
 .contact__info {
     z-index: 2;
     margin: 50px 0 0 60px;
     text-align: center;
+    height: 100%;
+    overflow: hidden !important;
 }
 
 .contact__info-text {
@@ -139,6 +142,15 @@ textarea, input {
     right: 0;
 }
 
+.contact__map-pic {
+    visibility: hidden;
+    position: relative;
+    overflow: hidden !important;
+}
+.contact__map-pic img {
+    overflow: hidden !important;
+}
+
 .mapboxgl-popup-content {
     background-color: transparent;
     padding: 0;
@@ -158,9 +170,20 @@ textarea, input {
 }
 
 @media screen and (max-width: 1070px) {
+    .contact {
+    flex-direction: column;
+    } 
     .contact__map {
-        visibility: hidden;
-        width: 0;
+    visibility: hidden;
+    }
+    .contact__map-pic {
+    visibility: visible;
+    width: 100vw;
+    height: auto;
+    margin: 10px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     }
     .contact {
         display: flex;

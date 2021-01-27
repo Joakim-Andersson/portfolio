@@ -59,7 +59,7 @@ export default function Contact() {
                     <section className="contact__info-text-accounts">
                         <div className="contact__info-text-accounts-images">
 
-                        <div className="image">
+                            <div className="image">
                                 <a href="https://www.linkedin.com/in/joakim-per-oskar-andersson/" target="_blank">
                                     <Image
                                         src="/linkedin.png"
@@ -119,6 +119,14 @@ export default function Contact() {
             <section className="contact__map">
                 <div id="contact__map" style={{ height: 800, width: 750 }} />
             </section>
+            <div className="contact__map-pic">
+                    <Image
+                        src="/map3.png"
+                        alt="map"
+                        width={750}
+                        height={750}
+                    />
+                </div>
         </div>
     )
 }
