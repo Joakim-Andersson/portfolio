@@ -103,14 +103,14 @@ export default function Skillsbox() {
                 <p className="skills__icons-boxtext"> Photoshop</p>
             </div>
 
-            <div className="skills__icons-box PostgresQL">
+            <div className="skills__icons-box PostgreSQL">
                 <Image
-                    src="/icons/PostgresQL.png"
+                    src="/icons/PostgreSQL.png"
                     alt="CSS logo"
                     width={40}
                     height={40}
                 />
-                <p className="skills__icons-boxtext"> PostgresQL</p>
+                <p className="skills__icons-boxtext"> PostgreSQL</p>
             </div>
 
             <div className="skills__icons-box React">
