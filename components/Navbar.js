@@ -32,7 +32,7 @@ export default function Navbar() {
                 ) : (
                         <>
                             <Link href="/">
-                                <h1>Joakim</h1>
+                                <h1 className="navbar__text">Joakim</h1>
                             </Link>
                         </>
                     )
