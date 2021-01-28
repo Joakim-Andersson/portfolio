@@ -27,10 +27,12 @@
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 900px) {
   .skilled {
     display: flex;
     flex-direction: column;
+    height: auto;
+
     .skilled__box {
       width: 300px;
     }

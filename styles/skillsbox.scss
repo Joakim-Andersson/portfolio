@@ -125,13 +125,12 @@
   }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 900px) {
   .skillsbox {
     background-image: none;
     .skills__headers {
       z-index: 5;
       width: 100%;
-      margin: 70px 25px 0 25px;
       color: white;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
