@@ -3,6 +3,7 @@ import '../styles/stars.css'
 import '../styles/contact.css'
 import "../styles/Navbar.css"
 import "../styles/Skills.scss"
+import "../styles/skillsbox.scss"
 import "../styles/about.scss"
 import "../styles/work.scss"
 import Head from 'next/head'

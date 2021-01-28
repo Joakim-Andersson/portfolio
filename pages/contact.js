@@ -99,7 +99,7 @@ export default function Contact() {
                 </div>
                 <form className="contact__info-form">
                     <h4> <strong>Have a question or want to work together? <br /> </strong>
-                        Don't hesitate to contact me :) </h4>
+                        Don't hesitate to contact me  </h4>
                     <label>
                         <input className="inputfield" type="text" name="name" placeholder="Name" onChange={e => setNameField(e.target.value)} />
                     </label>
@@ -120,13 +120,13 @@ export default function Contact() {
                 <div id="contact__map" style={{ height: 800, width: 750 }} />
             </section>
             <div className="contact__map-pic">
-                    <Image
-                        src="/map3.png"
-                        alt="map"
-                        width={750}
-                        height={750}
-                    />
-                </div>
+                <Image
+                    src="/map3.png"
+                    alt="map"
+                    width={750}
+                    height={790}
+                />
+            </div>
         </div>
     )
 }

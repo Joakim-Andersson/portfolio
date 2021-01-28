@@ -2,15 +2,15 @@
     display: flex;
     flex-direction: row;
     width: 80vw;
+    height: 90%;
     overflow: hidden !important;
 }
 
 .contact__info {
-    z-index: 2;
+    z-index: 3;
     margin: 50px 0 0 60px;
     text-align: center;
     height: 100%;
-    overflow: hidden !important;
 }
 
 .contact__info-text {
@@ -101,9 +101,6 @@ textarea, input {
     border-radius: 0px;
     width: 100%;
     color: rgb(255, 255, 255);
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 .messagefield {
@@ -131,7 +128,7 @@ textarea, input {
     border: 0;
     display: flex;
     justify-content: center;
-    width: 40%;
+    width: 200px;
     position: relative;
     cursor: pointer;
 }
@@ -143,10 +140,12 @@ textarea, input {
 }
 
 .contact__map-pic {
+    z-index: 2;
     visibility: hidden;
     position: relative;
     overflow: hidden !important;
 }
+
 .contact__map-pic img {
     overflow: hidden !important;
 }
@@ -171,19 +170,24 @@ textarea, input {
 
 @media screen and (max-width: 1070px) {
     .contact {
-    flex-direction: column;
-    } 
+        flex-direction: column;
+        position: relative;
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+    }
     .contact__map {
-    visibility: hidden;
+        visibility: hidden;
     }
     .contact__map-pic {
-    visibility: visible;
-    width: 100vw;
-    height: auto;
-    margin: 10px;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+        visibility: visible;
+        width: 100vw;
+        height: auto;
+        position: relative;
+        justify-content: center;
+        align-items: center;
     }
     .contact {
         display: flex;
@@ -203,7 +207,7 @@ textarea, input {
         align-self: center;
         align-content: center;
         width: 400px;
-        margin: 20px 0 !important;
+        margin: 20px 0;
         display: inline-block;
     }
 }

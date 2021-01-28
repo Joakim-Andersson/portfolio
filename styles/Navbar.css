@@ -12,11 +12,14 @@
     padding: 0 10px 0 10px;
 }
 
-.navbar h1{
+.navbar__arrow{
 margin: 0;
-padding: 10px;
+padding-left: 10px;
 cursor: pointer;
+align-self: center;
+align-content: center;
 }
+
 
 .navbar__contact {
     color: white;
