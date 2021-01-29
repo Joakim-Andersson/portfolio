@@ -10,10 +10,10 @@ export default function Home() {
       <div className="big"></div>
       <main className={styles.main__header}>
         <div className="main__header">
-          <h1 className={styles.main__header__first}>Hey there, I'm <br/>
+          <h1 className={styles.main__header__first}>Hey there,<br/> I'm
             <span className={styles.main__header__name} > J</span>oakim
           </h1>
-          <p className={styles.main__header__p}>Welcome to my portfolio </p>
+          <p className={styles.main__header__p}>Full Stack Developer </p>
           <div className={styles.main__arrow}>
                 <Image className={styles.main_arrow_img}
                     src="/down-arrow.png"
