@@ -9,13 +9,14 @@ import "../styles/work.scss"
 import Head from 'next/head'
 
 import Navbar from "../components/Navbar"
-import Home from "../pages/index"
-import About from "../pages/about"
-import Contact from "../pages/contact"
-import Skills from "../pages/skills"
-import Work from "../pages/Work"
+import Home from "../components/index"
+import About from "../components/about"
+import Contact from "../components/contact"
+import Skills from "../components/skills"
+import Work from "../components/work"
 
-function MyApp({ Component, pageProps }) {
+
+function MyApp() {
   return (
     <div>
       <Head>

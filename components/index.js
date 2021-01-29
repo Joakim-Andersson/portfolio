@@ -18,7 +18,7 @@ export default function Home() {
       <div className={styles.main__arrow}>
         <Image className={styles.main_arrow_img}
           src="/down-arrow.png"
-          alt="Linkedin Icon"
+          alt="arrow down to show there is a need to scroll"
           width={70}
           height={70}
         />

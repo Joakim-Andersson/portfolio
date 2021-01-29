@@ -1,5 +1,5 @@
 import React from "react";
-import Skillsbox from "../components/Skillsbox"
+import Skillsbox from "./Skillsbox"
 
 export default function skills() {
     return (
