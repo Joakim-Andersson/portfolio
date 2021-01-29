@@ -1,15 +1,11 @@
-import Head from "next/head";
 import Image from "next/image"
 import React, { useEffect, useState } from "react";
 
-const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
-
-mapboxgl.accessToken = 'pk.eyJ1IjoiaGV5dGhlcmVqb2FraW0iLCJhIjoiY2trY2o4OGZ3MDExazJvcG14aWhyemJvYyJ9.h2SsCAvtnNRvCd_aPM1CjA';
+import Map from "./map";
 
 export default function Contact() {
     const [pageIsMounted, setPageIsMounted] = useState(false)
 
-    const [nameField, setNameField] = useState('');
     const [mailField, setMailField] = useState('');
     const [subjectField, setSubjectField] = useState('');
     const [message, setMessage] = useState('');
@@ -31,28 +27,8 @@ export default function Contact() {
         }
     }
 
-    useEffect(() => {
-        setPageIsMounted(true)
-        const map = new mapboxgl.Map({
-            container: "contact__map",
-            style: "mapbox://styles/heytherejoakim/ckkcitaen2bsu18qvn7wqygor",
-            center: [13.91, 60.75],
-            zoom: 4.5,
-        });
-        var marker = new mapboxgl.Marker({
-            color: "#ff3232",
-        })
-            .setLngLat([10.745298, 59.911735])
-            .setPopup(new mapboxgl.Popup({ offset: 25 })
-                .setHTML('<h1>Hey there from Oslo!</h1> <img src="joakim.png" alt="male working" />'))
-            .addTo(map);
-    }, [])
-
     return (
         <div className="contact">
-            <Head>
-                <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
-            </Head>
             <section className="contact__info">
                 <div className="contact__info-text">
                     <h1>Let's connect!</h1>
@@ -101,9 +77,6 @@ export default function Contact() {
                     <h4> <strong>Have a question or want to work together? <br /> </strong>
                         Don't hesitate to contact me  </h4>
                     <label>
-                        <input className="inputfield" type="text" name="name" placeholder="Name" onChange={e => setNameField(e.target.value)} />
-                    </label>
-                    <label>
                         <input className="inputfield" type="text" name="Email" placeholder="Email" required onChange={e => setMailField(e.target.value)} />
                     </label>
                     <label>
@@ -116,9 +89,6 @@ export default function Contact() {
                     <input className="submitbutton" type="submit" value="Send" onClick={(event) => handleOnClick(event)} />
                 </form>
             </section>
-            <section className="contact__map">
-                <div id="contact__map" style={{ height: 800, width: 750 }} />
-            </section>
             <div className="contact__map-pic">
                 <Image
                     src="/map3.png"
@@ -127,6 +97,9 @@ export default function Contact() {
                     height={790}
                 />
             </div>
+            <section className="contact__map">
+                <Map />
+            </section>
         </div>
     )
 }

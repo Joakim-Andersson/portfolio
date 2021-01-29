@@ -6,6 +6,8 @@ import "../styles/Skills.scss"
 import "../styles/skillsbox.scss"
 import "../styles/about.scss"
 import "../styles/work.scss"
+import "../styles/map.scss"
+import 'mapbox-gl/dist/mapbox-gl.css';
 import Head from 'next/head'
 
 import Navbar from "../components/Navbar"

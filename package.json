@@ -18,5 +18,8 @@
     "react": "^17.0.1",
     "react-dom": "17.0.1",
     "sass": "^1.32.5"
+  },
+  "devDependencies": {
+    "@types/mapbox-gl": "^2.0.3"
   }
 }
