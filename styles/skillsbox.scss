@@ -19,9 +19,9 @@
     grid-auto-rows: minmax(50px, auto);
     grid-template-areas:
       "Frontend Frontend Backend Backend Tools Tools"
-      "React Redux REST GraphQL Git Figma"
-      "HTML CSS NodeJS MongoDB Heroku VSC"
-      "Webpack NextJS PostgresQL ExpressJS Photoshop Hubspot";
+      "React Redux REST ExpressJS Git VSC"
+      "HTML CSS NodeJS MongoDB Heroku Hubspot"
+      "Webpack NextJS GraphQL PostgresQL Photoshop Figma";
     grid-row-gap: 30px;
     grid-column-gap: 30px;
     align-items: center;
@@ -141,10 +141,10 @@
         "HTML CSS Webpack"
         "Backend Backend Backend"
         "NodeJS ExpressJS REST "
-        "GraphQL MongoDB PostgresQL"
+        "GraphQL PostgresQL MongoDB"
         "Tools Tools Tools"
-        "Git Figma VSC"
-        "Heroku Photoshop Hubspot";
+        "Git Heroku VSC"
+        "Figma Photoshop Hubspot";
       align-items: center;
       justify-content: center;
       align-content: center;

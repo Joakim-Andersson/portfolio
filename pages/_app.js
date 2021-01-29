@@ -9,6 +9,11 @@ import "../styles/work.scss"
 import Head from 'next/head'
 
 import Navbar from "../components/Navbar"
+import Home from "../pages/index"
+import About from "../pages/about"
+import Contact from "../pages/contact"
+import Skills from "../pages/skills"
+import Work from "../pages/Work"
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -18,7 +23,11 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="/joakim.png" />
       </Head>
       <Navbar />
-      <Component {...pageProps} />
+      <Home />
+      <About />
+      <Skills />
+      <Work />
+      <Contact />
     </div>
   )
 }

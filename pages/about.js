@@ -9,10 +9,10 @@ export default function About() {
                     <h2 >I enjoy building apps, solving problems and learning new technologies along the way.
                         </h2>
                 </blockquote>
-                <h3>Hey, I'm Joakim!</h3>
+                <h3>About me</h3>
                 <p>
-                    Full-stack developer with a background in Digital Marketing and E-commerce.
-                    I’m passionate and digitally talented with a natural ability to get things done.
+                    I'm Joakim, a Full-stack developer with a background in Digital Marketing and E-commerce.
+                   Digitally talented with a natural ability to get things done.
                     </p>
                 <p>
                     Based in Oslo, Norway, but originally from Sweden. Right now working as a consultant at <a href="https://salt.study/" target="_blank"> {`<SALT/>`} </a> School of Applied Technology.
@@ -21,7 +21,7 @@ export default function About() {
                         </p>
                 <Link href="/contact">
                     <p className="text__end">
-                        Would you like to work with me? Fun, let's chat! &rarr;
+                        Would you like to work with me? <br/> Fun, let's chat! (make button) &rarr;
                         </p>
                 </Link>
             </div>
