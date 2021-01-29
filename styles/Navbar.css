@@ -22,15 +22,8 @@ align-content: center;
 }
 
 .navbar__text {
-    color:white;
-    text-shadow:
-    -1px -1px #0dfdd7,
-    -2px -2px #0dfdd7,
-    -3px -3px #0dfdd7,
-    -4px -4px #0dfdd7,
-    -5px -5px #0dfdd7,
-    -6px -6px #0dfdd7,
-    -7px -7px #0dfdd7;
+    color: #0dfdd7;
+
 }
 .navbar__contact {
     color: white;

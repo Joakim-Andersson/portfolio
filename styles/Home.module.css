@@ -1,65 +1,58 @@
 .main__header {
-  margin-top: 60px;
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
   align-content: center;
-  justify-content: left;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   color: white;
+  letter-spacing: 2px;
+  height: 100%;
+  padding: 10px;
 }
 
-.main__header h1 {
-  font-size: 90px;
-  letter-spacing: 5px;
-  margin: 0 0 0 10px;
-    color:white;
-    text-shadow:
-    -1px -1px #0dfdd7,
-    -2px -2px #0dfdd7,
-    -3px -3px #0dfdd7,
-    -4px -4px #0dfdd7,
-    -5px -5px #0dfdd7,
-    -6px -6px #0dfdd7,
-    -7px -7px #0dfdd7,
-    -8px -8px #0dfdd7,
-    -9px -9px #0dfdd7,
-   -10px -10px #0dfdd7,
-   -11px -11px #0dfdd7,
-    -12px -12px #0dfdd7,
-    -13px -13px #0dfdd7,
-    -14px -14px #0dfdd7,
-    -15px -15px #0dfdd7,
-    -16px -16px #0dfdd7,
-    -17px -17px #0dfdd7,
-    -18px -18px #0dfdd7,
-    -19px -19px #0dfdd7,
-    -20px -20px #0dfdd7,
-    -21px -21px #0dfdd7,
-    -22px -22px #0dfdd7,
-    -23px -23px #0dfdd7,
-    -24px -24px #0dfdd7,
-    -25px -25px #0dfdd7,
-    -26px -26px #0dfdd7,
-    -27px -27px #0dfdd7,
-    -28px -28px #0dfdd7,
-    -29px -29px #0dfdd7,
-    -30px -30px #0dfdd7,
-    -31px -31px #0dfdd7,
-    -32px -32px #0dfdd7,
-    -33px -33px #0dfdd7,
-    -34px -34px #0dfdd7,
-    -35px -35px #0dfdd7,
-    -36px -36px #0dfdd7,
-    -37px -37px #0dfdd7,
-    -38px -38px #0dfdd7,
-    -39px -39px #0dfdd7,
-    -40px -40px #0dfdd7;
-}
-
-.main__header h3 {
+.main__header__first {
   font-size: 30px;
-  font-weight: 600;
-  margin: 0px
- }
+  line-height: 50px;
+}
 
+.main__header__name {
+  /* background: -webkit-linear-gradient(#0dfdd980, #0dfdd7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  text-shadow:
+  1px 1px #0ad4b6c9,
+  2px 2px #0ad4b6c9,
+  3px 3px #0ad4b6c9,
+  4px 4px #0ad4b6c9, 
+  5px 5px #0ad4b6c9;
+  font-size: 40px;
+  margin-right: 3px;
+}
 
+.main__header__p {
+  font-size: 20px;
+  color: white;
+  margin: 15px 0 100px 0;
+  letter-spacing: 2px;
+}
+
+.main__arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.main_arrow_img {
+  align-self: center;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin: 0 auto 0 auto;
+  transform-origin: bottom;
+  animation-name: main_arrow_img;
+  animation-timing-function: linear;
+}
+@keyframes main_arrow_img {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
