@@ -53,9 +53,24 @@
 
 @media only screen and (min-width: 1000px) {
   .skilled {
+    .skilled__text {
+      width: 450px;
+      margin: 10px;
+  }
+  .skilled__box {
+    min-width: 700px;
+    margin: 10px;
+  }
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .skilled {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    padding: 60px 0;
+    height: 100vh;
     .skilled__text {
       width: 450px;
       margin: 10px;

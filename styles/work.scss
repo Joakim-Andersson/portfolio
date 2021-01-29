@@ -4,24 +4,25 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
+    height: 100vh;
 
-.work__text {
-    width: 50%;
-    color: white;
-    margin: 10px 50px;
-    line-break: auto;
-    word-wrap: normal;
-    h1{
-        font-size: 4em;
+    .work__text {
+        width: 50%;
+        color: white;
+        margin: 10px 50px;
+        line-break: auto;
+        word-wrap: normal;
+        h1 {
+            font-size: 4em;
+        }
     }
-}
 
-.work__text span {
-    font-size: 3em;
-}
+    .work__text span {
+        font-size: 3em;
+    }
 
-.work__image {
-    width: 50%;
-    margin: 20px;
+    .work__image {
+        width: 50%;
+        margin: 20px;
+    }
 }

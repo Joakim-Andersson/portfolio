@@ -1,11 +1,11 @@
 .map {
-    width: 750px;
+    width: 700px;
     height: 790px;
     z-index: 1;
 }
 
 .mapboxgl-popup-content {
-    background-color: transparent;
+    background-color: transparent !important;
     padding: 0;
     color: white;
 }

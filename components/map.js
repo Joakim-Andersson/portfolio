@@ -30,7 +30,7 @@ export default function Map() {
             <Head>
                 <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
             </Head>
-            <div id="contact__map" style={{ height: 800, width: 750 }} />
+            <div id="contact__map" style={{ height: 800, width: 700 }} />
         </div>
     )
 }
