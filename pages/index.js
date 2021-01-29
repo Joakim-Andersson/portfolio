@@ -9,20 +9,20 @@ export default function Home() {
       <div className="medium"></div>
       <div className="big"></div>
       <main className={styles.main__header}>
-        <div className="main__header">
-          <h1 className={styles.main__header__first}>Hey there,<br/> I'm
+        <div className={styles.main__header__text}>
+          <h1 className={styles.main__header__first}>Hey there,<br /> I'm
             <span className={styles.main__header__name} > J</span>oakim
           </h1>
           <p className={styles.main__header__p}>Full Stack Developer </p>
-          <div className={styles.main__arrow}>
-                <Image className={styles.main_arrow_img}
-                    src="/down-arrow.png"
-                    alt="Linkedin Icon"
-                    width={70}
-                    height={70}
-                />
-            </div>
         </div>
+      <div className={styles.main__arrow}>
+        <Image className={styles.main_arrow_img}
+          src="/down-arrow.png"
+          alt="Linkedin Icon"
+          width={70}
+          height={70}
+        />
+      </div>
       </main>
     </div>
   )
