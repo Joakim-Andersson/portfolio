@@ -28,8 +28,8 @@ function MyApp() {
       <Navbar />
       <Home />
       <About />
-      <Skills />
       <Work />
+      <Skills />
       <Contact />
     </div>
   )

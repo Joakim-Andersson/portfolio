@@ -25,6 +25,10 @@
       margin: 15px 0 15px 0;
       line-height: 1.5em;
     }
+    .skilled__text-hide {
+      visibility: hidden;
+      height: 0px;
+    }
   }
   .skilled__box {
     width: 340px;
@@ -35,20 +39,25 @@
 @media only screen and (min-width: 760px) and (max-width: 1000px) {
   .skilled {
     margin: 60px 10px 60px 10px;
-  .skilled__text {
-    min-width: 500px;
-    p {
-      font-size: 1.3em;
-      margin: 25px 0 25px 0 !important;;
-      min-width: 470px;
-      line-height: 1.8em !important;
+    .skilled__text {
+      min-width: 500px;
+      p {
+        font-size: 1.3em;
+        margin: 25px 0 25px 0 !important;
+        min-width: 470px;
+        line-height: 1.8em !important;
+      }
+      .skilled__text-hide {
+        visibility: visible;
+        height: auto;
+
+      }
+    }
+    .skilled__box {
+      min-width: 700px;
+      margin: 10px;
     }
   }
-  .skilled__box {
-    min-width: 700px;
-    margin: 10px;
-  }
-}
 }
 
 @media only screen and (min-width: 1000px) {
@@ -56,12 +65,17 @@
     .skilled__text {
       width: 450px;
       margin: 10px;
+      .skilled__text-hide {
+        visibility: visible;
+        height: auto;
+      }
+    }
+    .skilled__box {
+      min-width: 700px;
+      margin: 10px;
+    }
+    
   }
-  .skilled__box {
-    min-width: 700px;
-    margin: 10px;
-  }
-}
 }
 
 @media only screen and (min-width: 1200px) {
@@ -70,14 +84,18 @@
     justify-content: space-around;
     align-items: center;
     padding: 60px 0;
-    height: 100vh;
     .skilled__text {
       width: 450px;
       margin: 10px;
+      .skilled__text-hide {
+        visibility: visible;
+        height: auto;
+
+      }
+    }
+    .skilled__box {
+      min-width: 800px !important;
+      margin: 10px;
+    }
   }
-  .skilled__box {
-    min-width: 800px !important;
-    margin: 10px;
-  }
-}
 }

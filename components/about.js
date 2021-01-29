@@ -12,18 +12,12 @@ export default function About() {
                 <h3>About me</h3>
                 <p>
                     I'm Joakim, a Full-stack developer with a background in Digital Marketing and E-commerce.
-                   Digitally talented with a natural ability to get things done.
+                    Digitally talented with a natural ability to get things done.
                     </p>
                 <p>
                     Based in Oslo, Norway, but originally from Sweden. Right now working as a consultant at <a href="https://salt.study/" target="_blank"> {`<SALT/>`} </a> School of Applied Technology.
-                            Among 1500 candidates, I was one of 30 to be selected for a 3 months accelerated career program to become a Full Stack JavaScript developer.
-                            Now I am eager to make a difference in this industry!
-                        </p>
-                <Link href="/contact">
-                    <p className="text__end">
-                        Would you like to work with me? <br/> Fun, let's chat! (make button) &rarr;
-                        </p>
-                </Link>
+                    I look forward to make a difference in this industry!
+                </p>
             </div>
             <div className="about__image">
                 <Image
