@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 
 import Image from "next/image"
@@ -6,10 +6,18 @@ import Image from "next/image"
 export default function Navbar() {
     const [backArrow, setBackArrow] = useState(false);
     const [clicked, setClicked] = useState(false);
+    const [scroll, setScroll] = useState(false);
+
     const handleClick = () => setClicked(!clicked);
 
+    useEffect(() => {
+        window.addEventListener('scroll', () => {
+          setScroll(window.scrollY > 1);
+        });
+      }, []);
+
     return (
-        <nav className="navbar">
+        <nav className={scroll ? 'navbar nav-scroll' : 'navbar'}>
             <div className="navbar__name" >
                 <Link
                     activeClass="active"
