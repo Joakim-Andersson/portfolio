@@ -5,24 +5,30 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    color: white;
 
-    .work__text {
-        width: 50%;
-        color: white;
-        margin: 10px 50px;
-        line-break: auto;
-        word-wrap: normal;
-        h1 {
-            font-size: 4em;
+    .work__projects {
+        width: 100vw;
+        height: 60%;
+        background-color: rgb(29, 29, 29);
+        z-index: 3;
+    }
+
+    .work__projects-li {
+        height: 80%;
+        z-index: 2;
+        p {
+            font-size: 20px;
         }
-    }
-
-    .work__text span {
-        font-size: 3em;
-    }
-
-    .work__image {
-        width: 50%;
-        margin: 20px;
+        .colored-circle {
+            background-color: #0dfdd7;
+            width: 150px;
+            height: 180px;
+            border-radius: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
     }
 }
