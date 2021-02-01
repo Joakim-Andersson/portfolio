@@ -1,15 +1,13 @@
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 const mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaGV5dGhlcmVqb2FraW0iLCJhIjoiY2trY2o4OGZ3MDExazJvcG14aWhyemJvYyJ9.h2SsCAvtnNRvCd_aPM1CjA';
 
 export default function Map() {
-    const [pageIsMounted, setPageIsMounted] = useState(false)
 
     useEffect(() => {
-        setPageIsMounted(true)
         const map = new mapboxgl.Map({
             container: "contact__map",
             style: "mapbox://styles/heytherejoakim/ckkcitaen2bsu18qvn7wqygor",

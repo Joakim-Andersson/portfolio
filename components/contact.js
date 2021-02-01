@@ -1,10 +1,9 @@
 import Image from "next/image"
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import Map from "./map";
 
 export default function Contact() {
-    const [pageIsMounted, setPageIsMounted] = useState(false)
 
     const [mailField, setMailField] = useState('');
     const [subjectField, setSubjectField] = useState('');

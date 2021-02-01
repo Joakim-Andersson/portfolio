@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import '../styles/stars.css'
 import '../styles/contact.css'
-import "../styles/Navbar.css"
+import "../styles/Navbar.scss"
 import "../styles/Skills.scss"
 import "../styles/skillsbox.scss"
 import "../styles/about.scss"

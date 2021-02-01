@@ -1,79 +1,101 @@
-import React, { useEffect, useState } from "react";
-import Link from "next/link";
+import React, { useState } from "react";
+import { Link } from 'react-scroll';
+
 import Image from "next/image"
 
 export default function Navbar() {
     const [backArrow, setBackArrow] = useState(false);
-
-    const handleBackClick = () => {
-        setBackArrow(false)
-    }
-
-    useEffect(() => {
-        if (window.location.pathname != "/") {
-            setBackArrow(true)
-        }
-    }, []);
+    const [clicked, setClicked] = useState(false);
+    const handleClick = () => setClicked(!clicked);
 
     return (
         <nav className="navbar">
-            <div className="navbar__arrow" onClick={handleBackClick}>
-                {backArrow ? (
-                    <>
-                        <Link href="/">
-                            <Image
-                                src="/backarrow.png"
-                                alt="backarrow Icon"
-                                width={30}
-                                height={30}
-                            />
-                        </Link>
-                    </>
-                ) : (
-                        <>
-                            <Link href="/">
-                                <h1 className="navbar__text">Joakim</h1>
-                            </Link>
-                        </>
-                    )
-                }
+            <div className="navbar__name" >
+                <Link
+                    activeClass="active"
+                    to="top"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}>
+                    <h1 className="navbar__text">Joakim</h1>
+                </Link>
             </div>
-            <section className="navbar__contact">
-                <div className="navbar__images">
-                    <div className="image">
-                        <a href="https://www.linkedin.com/in/joakim-per-oskar-andersson/" target="_blank">
+            <div className={clicked ? "navbar__menu-open" : "navbar__menu-closed"}>
+                <ul className="navbar__menu-box" role="presentation" onClick={handleClick}>
+                    <li className="nav__item" >
+                        <Link
+                            activeClass="active"
+                            to="about"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={handleClick}
+                        >
+                            About
+                                </Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link
+                            activeClass="active"
+                            to="work"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={handleClick}
+                        >
+                            Work
+                                </Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link
+                            activeClass="active"
+                            to="skills"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={handleClick}
+                        >
+                            Skills
+                                </Link>
+                    </li>
+                    <li className="nav__item">
+                        <Link
+                            activeClass="active"
+                            to="contact"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                            onClick={handleClick}
+                        >
+                            Contact
+                            </Link>
+                    </li>
+                </ul>
+                {clicked ? (
+                    <div className="hamburger__img" onClick={handleClick}>
+                        <Image
+                            src="/menu-close.png"
+                            alt="button for closing the menu"
+                            width={30}
+                            height={30}
+                        />
+                    </div>
+                ) : (
+                        <div className="hamburger__img" onClick={handleClick}>
                             <Image
-                                src="/linkedin.png"
-                                alt="Linkedin Icon"
+                                src="/menu.png"
+                                alt="button for closing the menu"
                                 width={30}
                                 height={30}
                             />
-                        </a>
-                    </div>
-
-                    <div className="image">
-                        <a href="https://github.com/Joakim-Andersson" target="_blank">
-                            <Image
-                                src="/github-sign.png"
-                                alt="Github Icon"
-                                width={30}
-                                height={30}
-                            />
-                        </a>
-                    </div>
-
-                    <div className="image">
-                        <a href="mailto:jjoakimm@hotmail.com">
-                            <Image
-                                src="/mail-bl.png"
-                                alt="Instagram Icon"
-                                width={30}
-                                height={30}
-                            />
-                        </a>
-                    </div>
-                </div>
-            </section>
+                        </div>
+                    )}
+            </div>
         </nav>
     )
 }

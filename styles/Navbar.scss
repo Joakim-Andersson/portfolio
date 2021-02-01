@@ -1,0 +1,125 @@
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.966);
+    color: #0dfdd7;
+    padding: 0 10px 0 10px;
+}
+
+.navbar__name {
+    margin: 0;
+    padding-left: 10px;
+    cursor: pointer;
+    align-self: center;
+    align-content: center;
+}
+
+.navbar__text {
+    color: #0dfdd7;
+}
+
+.navbar__contact {
+    color: white;
+}
+
+@media only screen and (max-width: 759px) {
+    .navbar__menu-closed {
+        display: flex;
+        .navbar__menu-box {
+            opacity: 0;
+        }
+        .hamburger__img {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+        }
+    }
+
+    .navbar__menu-open {
+        display: flex;
+        flex-direction: column;
+
+        .navbar__menu-box {
+            transform: translateX(0px);
+            flex-flow: column nowrap;
+            background-color: rgb(0, 0, 0);
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            height: 100vh;
+            width: 170px;
+            margin: 0px;
+            padding: 50px 30px;
+            transition: all 0.6s ease-in-out 0.1s;
+
+            .nav__item {
+                margin: 60px 10px;
+                font-size: 20px;
+                list-style-type: none;
+                cursor: pointer;
+            }
+            
+        }
+        .hamburger__img {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+        }
+    }
+}
+
+@media only screen and (min-width: 760px) {
+
+    .navbar__name {
+    margin-left: 30px;
+    }
+
+    .navbar__menu-closed {
+        .navbar__menu-box {
+            opacity: 0;
+        }
+        .hamburger__img {
+            position: fixed;
+            top: 10px;
+            right: 40px;
+            &:hover {
+            transform: rotate(360deg);
+            transition: all 2.9s ease-in-out 0.1s;
+            }
+        }
+    }
+
+    .navbar__menu-open {
+        display: flex;
+        flex-direction: row;
+
+        .navbar__menu-box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 50px;
+            transform: translateX(0px);
+            transition: all 0.6s ease-in-out 0.1s;
+
+            .nav__item {
+                margin: 0 30px 0 0;
+                font-size: 25px;
+                justify-content: center;
+                list-style-type: none;
+                cursor: pointer;
+            }
+        }
+        .hamburger__img {
+            position: fixed;
+            top: 10px;
+            right: 40px;
+        }
+    }
+}

@@ -3,7 +3,7 @@ import Skillsbox from "./Skillsbox"
 
 export default function skills() {
     return (
-        <div className="skilled">
+        <div id="skills" className="skilled">
             <div className="skilled__text">
                 <h1> Tech Skills </h1>
                 <p>As a Full Stack Developer, I have the opportunity to work in a diverse range of programs and tools from the starting phase of an application to the launch. Here are my preferred tools right now. </p>
