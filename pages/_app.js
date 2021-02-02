@@ -24,7 +24,7 @@ import Work from "../components/work"
 
 function MyApp() {
   return (
-    <div className="app-centered">
+    <div >
       <Head>
         <title>Joakim - that's me!</title>
         <link rel="icon" href="/joakim.png" />

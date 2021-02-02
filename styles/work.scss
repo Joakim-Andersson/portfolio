@@ -1,14 +1,17 @@
 .work {
-    margin: 60px 0;
-    height: 100%;
+    margin: 60px 30px;
+    padding: 10px 0;
     width: 90%;
-    padding: 20px 0;
     overflow: hidden !important;
     color: white;
-    background-color: #02D5B4;
+    background-color: #00ccad;
     text-align: center;
+    border: solid 10px #00ccad;
 
-    h1 {
-        font: 3em;
+    .project-header {
+        font-size: 1.5em;
+    }
+    .project-text {
+        font-size: 1.1em;
     }
 }

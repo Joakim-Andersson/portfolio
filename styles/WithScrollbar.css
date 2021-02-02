@@ -28,7 +28,7 @@ input[type="range"] {
     background: #ccc;
   }
   .carousel-container-with-scrollbar {
-    padding-left: 100px;
+    padding-left: 50px;
     padding-bottom: 20px;
   }
   .custom-slider {

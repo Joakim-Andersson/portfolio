@@ -4,11 +4,11 @@ import Carousel from "react-multi-carousel";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    items: 2.5
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2
+    items: 1
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -90,8 +90,9 @@ class WithScrollbar extends React.Component {
       >
         <div class="image-container increase-size">
           <div class="image-container-text">
-            <h1>Portfolio</h1>
-            <p>Portfolio created using NEXT and React framework.</p>
+          <h3 className="project-header">Portfolio</h3>
+            <p className="project-text">Portfolio created using NEXT and React framework. <br/>
+            Find on Github here. </p>
           </div>
           <img
             draggable={false}
@@ -102,7 +103,9 @@ class WithScrollbar extends React.Component {
 
         <div class="image-container increase-size">
           <div class="image-container-text">
-            <p>3</p>
+          <h3 className="project-header">Seasonal Produce</h3>
+            <p className="project-text"> App that gives recipes based on seasonal produce, to help make more environmentally friendy choices in the kitchen. <br/>
+            Find on Github here. </p>
           </div>
           <img
             draggable={false}
@@ -129,7 +132,7 @@ class WithScrollbar extends React.Component {
           <img
             draggable={false}
             style={{ width: "100%", cursor: "pointer" }}
-            src="Mainteny.jpg"
+            src="socialmedia-app.jpg"
           />
         </div>
 
