@@ -1,3 +1,7 @@
+import "semantic-ui-css/semantic.min.css";
+import "react-multi-carousel/lib/styles.css";
+import "../styles/style.css";
+import "../styles/WithScrollbar.css";
 import '../styles/globals.css'
 import '../styles/stars.css'
 import '../styles/contact.css'
@@ -20,7 +24,7 @@ import Work from "../components/work"
 
 function MyApp() {
   return (
-    <div>
+    <div className="app-centered">
       <Head>
         <title>Joakim - that's me!</title>
         <link rel="icon" href="/joakim.png" />

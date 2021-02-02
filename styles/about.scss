@@ -109,15 +109,15 @@
     .about {
         color: white;
         margin: 60px 10px;
-        padding: 60px 0;
+        padding: 30px 10px;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-around !important;
         align-items: center;
         .about__text {
             grid-area: text;
             width: 450px;
-            margin-top: 50px;
+            margin: 50px 50px;
             blockquote {
                 position: relative;
                 background-color: rgb(255, 61, 61);
@@ -175,6 +175,7 @@
         .about__image {
             grid-area: image;
             min-width: 450px;
+            padding: 10px;
         }
     }
 }

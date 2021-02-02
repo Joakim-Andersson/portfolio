@@ -48,3 +48,10 @@ body[data-nav='playground'] header {
   padding: 1em;
   background: #fff;
 }
+
+.app-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
