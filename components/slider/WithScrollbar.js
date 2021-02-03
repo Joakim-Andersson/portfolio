@@ -4,7 +4,7 @@ import Carousel from "react-multi-carousel";
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 2.5
+    items: 2
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -27,9 +27,9 @@ class WithScrollbar extends React.Component {
         const maxTranslateX = Math.round(
           // so that we don't over-slide
           carouselItemWidth *
-            (this.Carousel.state.totalItems -
-              this.Carousel.state.slidesToShow) +
-            150
+          (this.Carousel.state.totalItems -
+            this.Carousel.state.slidesToShow) +
+          150
         );
         value = maxTranslateX / 100; // calculate the unit of transform for the slider
       }
@@ -89,64 +89,58 @@ class WithScrollbar extends React.Component {
         }}
       >
         <div class="image-container increase-size">
-          <div class="image-container-text">
-          <h3 className="project-header">Portfolio</h3>
-            <p className="project-text">Portfolio created using NEXT and React framework. <br/>
-            Find on Github here. </p>
-          </div>
+
           <img
             draggable={false}
             style={{ width: "100%", cursor: "pointer" }}
             src="/portfolio.jpg"
           />
+          <div class="image-container-text">
+            <h3 className="project-header">Portfolio</h3>
+            <p className="project-text">Portfolio created using NEXT.js framework and React library. <br /> </p>
+            <a href="https://github.com/Joakim-Andersson/portfolio">Find on Github here. </a> 
+          </div>
         </div>
 
         <div class="image-container increase-size">
-          <div class="image-container-text">
-          <h3 className="project-header">Seasonal Produce</h3>
-            <p className="project-text"> App that gives recipes based on seasonal produce, to help make more environmentally friendy choices in the kitchen. <br/>
-            Find on Github here. </p>
-          </div>
-          <img
-            draggable={false}
-            style={{ width: "100%", cursor: "pointer" }}
-            src="seasonalprod.jpg"
-          />
-        </div>
-
-        <div class="image-container increase-size">
-          <div class="image-container-text">
-            <p>4</p>
-          </div>
           <img
             draggable={false}
             style={{ width: "100%", cursor: "pointer" }}
             src="Mainteny.jpg"
+            className="project-image"
           />
+          <div class="image-container-text">
+            <h3 className="project-header">Mainteny x HubSpot</h3>
+            <p className="project-text"> Rebrand of design and website for the client, and implemented a HubSpot-compatibility. <br /> </p>
+            <a href="http://hubspot-developers-18a16xw-9171713.hs-sites.com/mainteny"> See the site here.</a> 
+          </div>
         </div>
 
         <div class="image-container increase-size">
+          <img
+            draggable={false}
+            style={{ width: "100%", cursor: "pointer" }}
+            src="seasonal-produce.jpg"
+          />
           <div class="image-container-text">
-            <p>4</p>
+            <h3 className="project-header">Seasonal Produce</h3>
+            <p className="project-text"> App that gives recipes based on seasonal produce, to help make more environmentally friendy choices in the kitchen. <br /></p>
+            <a href="https://github.com/Joakim-Andersson/Seasonal-produce">Find on Github here.</a> 
           </div>
+        </div>
+
+        <div class="image-container increase-size">
           <img
             draggable={false}
             style={{ width: "100%", cursor: "pointer" }}
             src="socialmedia-app.jpg"
           />
-        </div>
-
-        <div class="image-container increase-size">
           <div class="image-container-text">
-            <p>4</p>
+            <h3 className="project-header"> Niched Social Media Network</h3>
+            <p className="project-text"> Vetted Social Media Application made for people with disabilities. Stack: Using React as the library and Socket.io to make the chat-function real-time. <br /> </p>
+            <a href="https://github.com/hagenek/polka">Find on Github here. </a> 
           </div>
-          <img
-            draggable={false}
-            style={{ width: "100%", cursor: "pointer" }}
-            src="Mainteny.jpg"
-          />
         </div>
-
 
       </Carousel>
     );

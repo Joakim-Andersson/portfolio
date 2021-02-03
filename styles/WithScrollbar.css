@@ -1,51 +1,102 @@
 input[type="range"] {
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 300px;
-    height: 2px;
-    background: #ddd;
-    border: none;
-    border-radius: 3px;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    border: none;
-    height: 5px;
-    width: 15%;
-    border-radius: 0%;
-    background: #000;
-    margin-top: -4px;
-  }
-  
-  input[type="range"]:focus {
-    outline: none;
-  }
-  
-  input[type="range"]:focus::-webkit-slider-runnable-track {
-    background: #ccc;
-  }
-  .carousel-container-with-scrollbar {
-    padding-left: 50px;
-    padding-bottom: 20px;
-  }
-  .custom-slider {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 0 20px;
-  }
-  .custom-slider__input {
-    width: 80%;
-  }
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 2px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 5px;
+  width: 15%;
+  border-radius: 0%;
+  background: #000;
+  margin-top: -4px;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #ccc;
+}
+
+.carousel-container-with-scrollbar {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.custom-slider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.image-container {
+height: 650px;
+}
+
+
+.slider-image-item {
+  width: 500px !important;
+  padding: 20px 0 20px 20px;
+}
+
+.image-container-text {
+  margin-top: 10px;
+  width: 70%;
+  text-align: left;
+
+}
+
+.project-header {
+  font-size: 1.5em;
+  text-align: left;
+
+}
+
+.project-text {
+  font-size: 1.1em;
+  text-align: left;
+}
+.image-container-text a{
+  font-weight: 600;
+  text-decoration: underline;
+  text-align: left;
+
+}
+
+
+@media only screen and (max-width: 700px) {
   .slider-image-item {
-    padding: 20px 0 20px 20px;
+    padding: 0 0 20px 20px;
   }
-  h1 {
-    font-size: 2em;
-  }
-  p {
-    font-size: 1.5em;
-  }
+  .image-container {
+    height: 450px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+
+    }
+  .image-container img {
+      height: 300px !important;
+      width: 300px !important
+    }
+    .project-header {
+      font-size: 1.5em;
+    }
+    .project-text {
+      font-size: 1.1em;
+    }
+}
