@@ -88,20 +88,7 @@ class WithScrollbar extends React.Component {
           }
         }}
       >
-        <div class="image-container increase-size">
-
-          <img
-            draggable={false}
-            style={{ width: "100%", cursor: "pointer" }}
-            src="/portfolio.jpg"
-          />
-          <div class="image-container-text">
-            <h3 className="project-header">Portfolio</h3>
-            <p className="project-text">Portfolio created using NEXT.js framework and React library. <br /> </p>
-            <a href="https://github.com/Joakim-Andersson/portfolio">Find on Github here. </a> 
-          </div>
-        </div>
-
+        
         <div class="image-container increase-size">
           <img
             draggable={false}
@@ -120,12 +107,12 @@ class WithScrollbar extends React.Component {
           <img
             draggable={false}
             style={{ width: "100%", cursor: "pointer" }}
-            src="seasonal-produce.jpg"
+            src="socialmedia-app.jpg"
           />
           <div class="image-container-text">
-            <h3 className="project-header">Seasonal Produce</h3>
-            <p className="project-text"> App that gives recipes based on seasonal produce, to help make more environmentally friendy choices in the kitchen. <br /></p>
-            <a href="https://github.com/Joakim-Andersson/Seasonal-produce">Find on Github here.</a> 
+            <h3 className="project-header"> Niched Social Media Network</h3>
+            <p className="project-text"> Vetted Social Media Application made for people with disabilities. Stack: Using React as the library and Socket.io to make the chat-function real-time. <br /> </p>
+            <a href="https://github.com/hagenek/polka">Find on Github here. </a> 
           </div>
         </div>
 
@@ -133,12 +120,25 @@ class WithScrollbar extends React.Component {
           <img
             draggable={false}
             style={{ width: "100%", cursor: "pointer" }}
-            src="socialmedia-app.jpg"
+            src="/portfolio.jpg"
           />
           <div class="image-container-text">
-            <h3 className="project-header"> Niched Social Media Network</h3>
-            <p className="project-text"> Vetted Social Media Application made for people with disabilities. Stack: Using React as the library and Socket.io to make the chat-function real-time. <br /> </p>
-            <a href="https://github.com/hagenek/polka">Find on Github here. </a> 
+            <h3 className="project-header">Portfolio</h3>
+            <p className="project-text">Portfolio created using NEXT.js framework and React library. <br /> </p>
+            <a href="https://github.com/Joakim-Andersson/portfolio">Find on Github here. </a> 
+          </div>
+        </div>
+
+        <div class="image-container increase-size">
+          <img
+            draggable={false}
+            style={{ width: "100%", cursor: "pointer" }}
+            src="seasonal-produce.jpg"
+          />
+          <div class="image-container-text">
+            <h3 className="project-header">Seasonal Produce</h3>
+            <p className="project-text"> App that gives recipes based on seasonal produce, to help make more environmentally friendy choices in the kitchen. <br /></p>
+            <a href="https://github.com/Joakim-Andersson/Seasonal-produce">Find on Github here.</a> 
           </div>
         </div>
 
