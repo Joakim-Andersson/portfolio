@@ -90,7 +90,7 @@ class WithScrollbar extends React.Component {
           />
           <div class="image-container-text">
             <h3 className="project-header"> Niche Social Media Network</h3>
-            <p className="project-text"> Vetted Social Media Application made for people with disabilities. Stack: Using React as the library and Socket.io to make the chat-function real-time. <br /> </p>
+            <p className="project-text"> Vetted Social Media Application made for people with disabilities. Stack: Using React as the library and Socket.io to make the chat update real-time. <br /> </p>
             <a href="https://github.com/hagenek/polka">Find on Github here. </a>
           </div>
         </div>

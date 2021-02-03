@@ -1,5 +1,4 @@
 import Image from "next/image"
-import Link from "next/link";
 
 export default function About() {
     return (
@@ -11,11 +10,11 @@ export default function About() {
                 <h3>About me</h3>
                 <p>
                     I'm Joakim, a Full-stack developer with a background in Marketing and E-commerce.
-                    I enjoy building apps, solving problems and learning new technologies along the way.
+                    I enjoy building apps, solving problems and learning new technologies.
                     </p>
                 <p>
-                    Based in Oslo, Norway, but originally from Sweden. Right now working as a consultant at <a href="https://salt.study/" target="_blank"> {`<SALT/>`} </a> School of Applied Technology.
-                    I'm excited to make a difference in this industry!
+                  Originally from Sweden, I am currently based in Oslo Norway, working as a consultant <a href="https://salt.study/" target="_blank"> {`</SALT>`} </a> School of Applied Technology.
+                 I thrive for finding tailored solutions for my clients' challenges.
                 </p>
             </div>
             <div className="about__image">

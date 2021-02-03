@@ -3,13 +3,14 @@
     position: fixed;
     top: 0;
     height: 50px;
-    z-index: 999;
+    z-index: 99999;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.301);
     color: #0dfdd7;
     padding: 0 10px 0 10px;
+
 }
 
 .nav-scroll {
@@ -32,6 +33,17 @@
     color: white;
 }
 
+.navbar img {
+    cursor: pointer;
+}
+
+.nav__item a{
+    color: white;
+    &:hover {
+        color: #0dfdd7
+    }
+}
+
 @media only screen and (max-width: 759px) {
     .navbar__menu-closed {
         display: flex;
@@ -52,7 +64,7 @@
         .navbar__menu-box {
             transform: translateX(0px);
             flex-flow: column nowrap;
-            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.884);
             position: fixed;
             top: 0px;
             right: 0px;
@@ -92,6 +104,7 @@
             position: fixed;
             top: 10px;
             right: 40px;
+            cursor: pointer;
             &:hover {
             transform: rotate(360deg);
             transition: all 2.9s ease-in-out 0.1s;
@@ -114,7 +127,7 @@
 
             .nav__item {
                 margin: 0 30px 0 0;
-                font-size: 25px;
+                font-size: 18px;
                 justify-content: center;
                 list-style-type: none;
                 cursor: pointer;

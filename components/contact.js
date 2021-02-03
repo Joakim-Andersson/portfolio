@@ -35,7 +35,7 @@ export default function Contact() {
                         <div className="contact__info-text-accounts-images">
 
                             <div className="image">
-                                <a href="https://www.linkedin.com/in/joakim-per-oskar-andersson/" target="_blank">
+                                <a href="https://www.linkedin.com/in/joakim-per-oskar-andersson/" target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/linkedin.png"
                                         alt="Linkedin Icon"
@@ -47,7 +47,7 @@ export default function Contact() {
                             </div>
 
                             <div className="image">
-                                <a href="https://github.com/Joakim-Andersson" target="_blank">
+                                <a href="https://github.com/Joakim-Andersson" target="_blank" rel="noopener noreferrer">
                                     <Image
                                         src="/github-sign.png"
                                         alt="Github Icon"
