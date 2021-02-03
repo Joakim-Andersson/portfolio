@@ -26,7 +26,7 @@
                 text-align: center;
             }
             &:before {
-                color: #0dfdd7;
+                color: #ffffff;
                 content: "\201C";
                 font-size: 1em;
                 line-height: 0.75em;
@@ -37,7 +37,7 @@
                 transform-origin: top;
             }
             &:after {
-                color: #0dfdd7;
+                color: #ffffff;
                 content: "\201E";
                 font-size: 1em;
                 line-height: 0.75em;
@@ -132,7 +132,6 @@
                     text-align: center;
                 }
                 &:before {
-                    color: #0dfdd7;
                     content: "\201C";
                     font-size: 1em;
                     line-height: 0.75em;
@@ -143,7 +142,6 @@
                     transform-origin: top;
                 }
                 &:after {
-                    color: #0dfdd7;
                     content: "\201E";
                     font-size: 1em;
                     line-height: 0.75em;
