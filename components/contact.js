@@ -42,8 +42,8 @@ export default function Contact() {
                                         width={50}
                                         height={50}
                                     />
-                                    <p>Linkedin</p>
                                 </a>
+                                <p>Linkedin</p>
                             </div>
 
                             <div className="image">
@@ -54,8 +54,8 @@ export default function Contact() {
                                         width={50}
                                         height={50}
                                     />
-                                    <p>Github</p>
                                 </a>
+                                <p>Github</p>
                             </div>
 
                             <div className="image">
@@ -66,8 +66,8 @@ export default function Contact() {
                                         width={50}
                                         height={50}
                                     />
-                                    <p>Mail</p>
                                 </a>
+                                <p>Mail</p>
                             </div>
                         </div>
                     </section>

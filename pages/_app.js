@@ -10,6 +10,7 @@ import "../styles/Skills.scss"
 import "../styles/skillsbox.scss"
 import "../styles/about.scss"
 import "../styles/work.scss"
+import "../styles/footer.scss"
 import "../styles/map.scss"
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Head from 'next/head'
@@ -20,6 +21,7 @@ import About from "../components/about"
 import Contact from "../components/contact"
 import Skills from "../components/skills"
 import Work from "../components/work"
+import Footer from "../components/footer"
 
 
 function MyApp() {
@@ -35,6 +37,7 @@ function MyApp() {
       <Work />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   )
 }

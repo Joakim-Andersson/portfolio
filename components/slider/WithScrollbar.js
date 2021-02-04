@@ -69,55 +69,72 @@ class WithScrollbar extends React.Component {
       >
 
         <div class="image-container increase-size">
-          <img
-            draggable={false}
-            style={{ width: "100%" }}
-            src="Mainteny.jpg"
-            className="project-image"
-          />
+          <div className="imgforbutton">
+            <img
+              draggable={false}
+              style={{ width: "100%" }}
+              src="Mainteny.jpg"
+              className="project-image"
+            />
+            <a href="http://hubspot-developers-18a16xw-9171713.hs-sites.com/mainteny">
+              <button> Visit site </button>
+            </a>
+          </div>
           <div class="image-container-text">
             <h3 className="project-header">Mainteny x HubSpot</h3>
             <p className="project-text"> Rebrand of design and website for the client, and implemented a HubSpot-compatibility. <br /> </p>
-            <a href="http://hubspot-developers-18a16xw-9171713.hs-sites.com/mainteny"> See the site here.</a>
           </div>
         </div>
 
         <div class="image-container increase-size">
-          <img
-            draggable={false}
-            style={{ width: "100%" }}
-            src="socialmedia-app.jpg"
-          />
+          <div className="imgforbutton">
+            <img
+              draggable={false}
+              style={{ width: "100%" }}
+              src="socialmedia-app.jpg"
+            />
+            <a href="https://github.com/hagenek/polka">
+              <button> Source code </button>
+            </a>
+          </div>
           <div class="image-container-text">
-            <h3 className="project-header"> Niche Social Media Network</h3>
+            <h3 className="project-header"> Niche Social Media</h3>
             <p className="project-text"> Vetted Social Media Application made for people with disabilities. Stack: Using React as the library and Socket.io to make the chat update real-time. <br /> </p>
-            <a href="https://github.com/hagenek/polka">Find on Github here. </a>
+
           </div>
         </div>
 
         <div class="image-container increase-size">
-          <img
-            draggable={false}
-            style={{ width: "100%" }}
-            src="/portfolio.jpg"
-          />
+          <div className="imgforbutton">
+            <img
+              draggable={false}
+              style={{ width: "100%" }}
+              src="/portfolio.jpg"
+            />
+            <a href="https://github.com/Joakim-Andersson/portfolio">
+              <button> Source code </button>
+            </a>
+          </div>
           <div class="image-container-text">
             <h3 className="project-header">Portfolio</h3>
             <p className="project-text">Portfolio created using NEXT.js framework and React library. <br /> </p>
-            <a href="https://github.com/Joakim-Andersson/portfolio">Find on Github here. </a>
           </div>
         </div>
 
         <div class="image-container increase-size">
-          <img
-            draggable={false}
-            style={{ width: "100%" }}
-            src="seasonal-produce.jpg"
-          />
+          <div className="imgforbutton">
+            <img
+              draggable={false}
+              style={{ width: "100%" }}
+              src="seasonal-produce.jpg"
+            />
+            <a href="https://github.com/Joakim-Andersson/Seasonal-produce">
+              <button> Source code </button>
+            </a>
+          </div>
           <div class="image-container-text">
             <h3 className="project-header">Seasonal Produce</h3>
             <p className="project-text"> App that gives recipes based on seasonal produce, to help make more environmentally conscious decisions in the kitchen. <br /></p>
-            <a href="https://github.com/Joakim-Andersson/Seasonal-produce">Find on Github here.</a>
           </div>
         </div>
 

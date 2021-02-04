@@ -1,10 +1,29 @@
 .react-multiple-carousel__arrow {
-background-color: #0dfdd9b9;
+  background-color: rgb(255, 61, 61);
+}
+
+.react-multiple-carousel__arrow:hover {
+  background-color: rgb(255, 61, 61);
+}
+
+.react-multiple-carousel__arrow--left {
+  left: calc(2% + 5px);
+  top: 40%;
+}
+
+.react-multiple-carousel__arrow--right {
+  right: calc(2% + 5px);
+  top: 40%;
+}
+
+.imgforbutton {
+  position: relative;
 }
 
 .image-container {
-height: 650px;
-padding: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .slider-image-item {
@@ -28,39 +47,71 @@ padding: 10px;
   text-align: left;
 }
 
-.image-container-text a{
+.image-container a {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-weight: 500;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  background: rgb(255, 61, 61);
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin: -5px;
+  border: 0;
+  width: 150px;
+  cursor: pointer;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0%;
+}
+
+.image-container button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
   font-weight: 600;
-  text-decoration: underline;
-  text-align: left
+  color: white;
+  border: none;
+  cursor: pointer;
 }
-
-.image-container-text a:hover {
-  color: #0dfdd7
-}
-
 
 @media only screen and (max-width: 700px) {
   .slider-image-item {
     padding: 0 0 20px 20px;
   }
   .image-container {
-    height: 450px;
     width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    
-
-    }
+  }
   .image-container img {
-      height: 300px !important;
-      width: 300px !important
-    }
-    .project-header {
-      font-size: 1.5em;
-    }
-    .project-text {
-      font-size: 1.1em;
-    }
+    height: 300px !important;
+    width: 300px !important
+  }
+  .project-header {
+    font-size: 1.5em;
+  }
+  .project-text {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .react-multiple-carousel__arrow--left {
+    left: calc(2% + 5px);
+    top: 25%;
+  }
+  .react-multiple-carousel__arrow--right {
+    right: calc(2% + 5px);
+    top: 25%;
+  }
+  .react-multi-carousel-item, .react-multi-carousel-item--active {
+    height: 600px;
+  }
 }

@@ -52,7 +52,7 @@
     cursor: pointer;
 }
 
-.contact__info-text-accounts-images a :hover{
+.contact__info-text-accounts-images a :hover {
     background-color: #ff2828;
     border-radius: 10px;
 }
@@ -111,6 +111,9 @@ textarea, input {
 }
 
 .submitbutton {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     font-weight: 500;
     color: black;
     letter-spacing: 1.125px;

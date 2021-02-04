@@ -1,6 +1,7 @@
 import Image from "next/image"
 
 export default function About() {
+    
     return (
         <section id="about" className="about">
             <div className="about__text">
@@ -14,7 +15,7 @@ export default function About() {
                     </p>
                 <p>
                   Originally from Sweden, I am currently based in Oslo Norway, working as a consultant <a href="https://salt.study/" target="_blank"> {`</SALT>`} </a> School of Applied Technology.
-                 I thrive for finding tailored solutions for my clients' challenges.
+                 finding tailored solutions for my clients' challenges.
                 </p>
             </div>
             <div className="about__image">
