@@ -21,9 +21,11 @@
             h2 {
                 font-size: 1.5em;
                 font-weight: 300;
+                letter-spacing: 1.5px;
                 margin: 0;
                 padding: 10px;
                 text-align: center;
+                font-style: italic;
             }
             &:before {
                 color: #ffffff;
@@ -83,7 +85,7 @@
         margin-top: 10px;
         blockquote {
             position: relative;
-            background-color: blueviolet;
+            background-color: rgb(255, 44, 44);
             width: 100%;
             padding: 0;
             margin: 0;
@@ -117,11 +119,11 @@
         height: 60vh;
         .about__text {
             grid-area: text;
-            width: 450px;
+            width: 470px;
             margin: 50px 50px;
             blockquote {
                 position: relative;
-                background-color: rgb(255, 61, 61);
+                background-color: rgb(255, 44, 44);
                 width: 100%;
                 padding: 0;
                 margin: 0;
@@ -159,9 +161,9 @@
                 color: #0dfdd7;
             }
             p {
-                font-size: 1.2em;
+                font-size: 1.4em;
                 margin: 15px 0 15px 0;
-                line-height: 1.3em;
+                line-height: 1.5em;
             }
             .text__end {
                 color: #0dfdd7;

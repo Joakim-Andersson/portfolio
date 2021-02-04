@@ -64,11 +64,15 @@
   .skilled {
     height: auto;
     .skilled__text {
-      width: 450px;
+      width: 480px;
       margin: 10px;
+      p {
+        font-size: 1.3em;
+        line-height: 1.5em !important;
       .skilled__text-hide {
         visibility: visible;
         height: auto;
+      }
       }
     }
     .skilled__box {
@@ -86,7 +90,7 @@
     align-items: center;
     padding: 60px 0;
     .skilled__text {
-      width: 450px;
+      width: 470px;
       margin: 10px;
       .skilled__text-hide {
         visibility: visible;

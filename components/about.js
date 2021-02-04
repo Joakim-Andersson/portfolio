@@ -14,8 +14,8 @@ export default function About() {
                     I enjoy building apps, solving problems and learning new technologies.
                     </p>
                 <p>
-                  Originally from Sweden, I am currently based in Oslo Norway, working as a consultant <a href="https://salt.study/" target="_blank"> {`</SALT>`} </a> School of Applied Technology.
-                 finding tailored solutions for my clients' challenges.
+                  Originally from Sweden, I am currently based in Oslo, Norway, working as a consultant at <a href="https://salt.study/" target="_blank"> {`</SALT>`} </a> School of Applied Technology.
+                 Finding tailored solutions for my clients' challenges, is what keeps me going!
                 </p>
             </div>
             <div className="about__image">

@@ -76,13 +76,14 @@ class WithScrollbar extends React.Component {
               src="Mainteny.jpg"
               className="project-image"
             />
+            <p className="tool-stack"> Toolstack: NextJS - React - Express </p>
             <a href="http://hubspot-developers-18a16xw-9171713.hs-sites.com/mainteny">
               <button> Visit site </button>
             </a>
           </div>
           <div class="image-container-text">
             <h3 className="project-header">Mainteny x HubSpot</h3>
-            <p className="project-text"> Rebrand of design and website for the client, and implemented a HubSpot-compatibility. <br /> </p>
+            <p className="project-text"> Rebrand of design and website for client, and implemented a HubSpot-compatibility. <br /> </p>
           </div>
         </div>
 
