@@ -29,7 +29,7 @@ function MyApp() {
     <div >
       <Head>
         <title>Joakim - that's me!</title>
-        <link rel="icon" href="/joakim.png" />
+        <link rel="icon" href="/favicon-j.png" />
       </Head>
       <Navbar />
       <Home />
