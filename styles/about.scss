@@ -18,6 +18,8 @@
             width: 100%;
             padding: 0;
             margin: 0;
+            position: relative;
+            background-color: rgb(255, 41, 41);
             h2 {
                 font-size: 1.5em;
                 font-weight: 300;
@@ -84,11 +86,7 @@
         min-width: 500px;
         margin-top: 10px;
         blockquote {
-            position: relative;
-            background-color: rgb(255, 44, 44);
-            width: 100%;
-            padding: 0;
-            margin: 0;
+
         }
         p {
             font-size: 1.3em;
@@ -122,11 +120,8 @@
             width: 470px;
             margin: 50px 50px;
             blockquote {
-                position: relative;
-                background-color: rgb(255, 44, 44);
-                width: 100%;
-                padding: 0;
-                margin: 0;
+
+
                 h2 {
                     font-size: 1.5em;
                     font-weight: 300;

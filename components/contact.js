@@ -97,7 +97,7 @@ export default function Contact() {
                 />
             </div>
             <section className="contact__map">
-                <Map />
+                <Map/>
             </section>
         </div>
     )

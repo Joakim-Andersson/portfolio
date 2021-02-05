@@ -12,8 +12,8 @@ export default function Home() {
       <div className="big"></div>
       <main className={styles.main__header}>
         <div className={styles.main__header__text}>
-          <h1 className={styles.main__header__first}>Hey there,<br /> I'm
-            <span className={styles.main__header__name} > Joakim</span>
+          <h1 className={styles.main__header__first}>Hey there,<br /> 
+            <span className={styles.main__header__name} >I'm Joakim</span>
           </h1>
           <p className={styles.main__header__p}>Full-stack Developer </p>
         </div>
