@@ -26,7 +26,7 @@ export default function Navbar() {
                     smooth={true}
                     offset={-70}
                     duration={500}>
-                    <h1 className="navbar__text">Joakim</h1>
+                    <h1 className="navbar__text">J</h1>
                 </Link>
             </div>
             <div className={clicked ? "navbar__menu-open" : "navbar__menu-closed"}>

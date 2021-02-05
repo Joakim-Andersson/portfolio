@@ -23,7 +23,7 @@
   -webkit-text-fill-color: transparent; */
   font-size: 40px;
   margin-right: 3px;
-  text-shadow: 1px 1px #0ad4b688, 2px 2px #0ad4b688, 3px 3px #0ad4b688, 4px 4px #0ad4b688, 5px 5px #0ad4b688;
+  text-shadow: 1px 1px #0ad4b688, 2px 2px #0ad4b688, 3px 3px #0ad4b688, 4px 4px #0ad4b688;
 }
 
 .main__header__p {
@@ -70,6 +70,8 @@
   .main__header__name {
     font-size: 60px;
     margin-right: 4px;
+    text-shadow: 1px 1px #0ad4b688, 2px 2px #0ad4b688, 3px 3px #0ad4b688, 4px 4px #0ad4b688, 5px 5px #0ad4b688;
+
   }
   .main__header__p {
     font-size: 25px;
@@ -85,6 +87,8 @@
   .main__header__name {
     font-size: 80px;
     margin-right: 4px;
+    text-shadow: 1px 1px #0ad4b688, 2px 2px #0ad4b688, 3px 3px #0ad4b688, 4px 4px #0ad4b688, 5px 5px #0ad4b688;
+
   }
   .main__header__p {
     font-size: 40px;

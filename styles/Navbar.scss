@@ -18,14 +18,15 @@
 
 .navbar__name {
     margin: 0;
-    padding-left: 10px;
+    padding-bottom: 16x;
     cursor: pointer;
     align-self: center;
     align-content: center;
 }
 
 .navbar__text {
-    color: #0dfdd7;
+    color: #ffffff;
+    text-shadow: 1px 1px #0ad4b688, 2px 2px #0ad4b688, 3px 3px #0ad4b688, 4px 4px #0ad4b688, 5px 5px #0ad4b688;
 }
 
 .navbar__contact {
