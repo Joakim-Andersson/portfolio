@@ -15,7 +15,7 @@ export default function Home() {
           <h1 className={styles.main__header__first}>Hey there,<br /> I'm
             <span className={styles.main__header__name} > J</span>oakim
           </h1>
-          <p className={styles.main__header__p}>Full Stack Developer </p>
+          <p className={styles.main__header__p}>Full-stack Developer </p>
         </div>
         <div className={styles.main__arrow}>
           <Link

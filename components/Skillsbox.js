@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
 import Image from "next/image"
 
 
@@ -9,8 +8,8 @@ export default function Skillsbox() {
         <div className="skillsbox">
         <div className="skills__headers">
 
-            <h1 className="skills__headers-text Frontend">Frontend</h1>
-            <h1 className="skills__headers-text Backend">Backend</h1>
+            <h1 className="skills__headers-text Frontend">Front-end</h1>
+            <h1 className="skills__headers-text Backend">Back-end</h1>
             <h1 className="skills__headers-text Tools">Tools</h1>
 
             <div className="skills__icons-box CSS">

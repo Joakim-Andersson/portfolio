@@ -2,17 +2,20 @@ footer {
     margin: 20px;
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    
-    .footer__text {
-        color: #ffffff;
-        font-size: 12px;
-        cursor: n-resize;
-    }
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
     h3 {
         color: #0dfdd7;
         font-size: 12px;
+        font-weight: 400;
     }
+    a{
+        cursor: n-resize;
+        border: solid 1px #0dfdd7;
+        border-radius: 100%;
+        padding: 5px;
+}
 }

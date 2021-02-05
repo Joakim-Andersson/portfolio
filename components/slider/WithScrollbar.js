@@ -140,6 +140,24 @@ class WithScrollbar extends React.Component {
             <p className="project-text"> App that gives recipes based on seasonal produce, to help make more environmentally conscious decisions in the kitchen. <br /></p>
           </div>
         </div>
+{/* 
+        <div class="image-container increase-size">
+          <div className="imgforbutton">
+            <img
+              draggable={false}
+              style={{ width: "100%" }}
+              src="github-work.png"
+            />
+            <p className="tool-stack"> Toolstack: React - Express  </p>
+            <a href="https://github.com/Joakim-Andersson/">
+              <button> See Github </button>
+            </a>
+          </div>
+          <div class="image-container-text">
+            <h3 className="project-header">Check out more! </h3>
+            <p className="project-text"> See more of what I've done on my Github-profile! <br /></p>
+          </div>
+        </div> */}
 
       </Carousel>
     );

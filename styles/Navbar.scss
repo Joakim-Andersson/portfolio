@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.301);
     color: #0dfdd7;
     padding: 0 10px 0 10px;
 
@@ -98,6 +97,8 @@
 
     .navbar__menu-closed {
         .navbar__menu-box {
+            top: 10px;
+            right: 40px;
             opacity: 0;
         }
         .hamburger__img {
@@ -106,6 +107,8 @@
             right: 40px;
             cursor: pointer;
             &:hover {
+                top: 10px;
+            right: 40px;
             transform: rotate(360deg);
             transition: all 2.9s ease-in-out 0.1s;
             }
@@ -131,6 +134,8 @@
                 justify-content: center;
                 list-style-type: none;
                 cursor: pointer;
+                top: 10px;
+            right: 40px;
             }
         }
         .hamburger__img {
