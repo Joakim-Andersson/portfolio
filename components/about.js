@@ -6,7 +6,7 @@ export default function About() {
         <section id="about" className="about">
             <div className="about__text">
                 <blockquote>
-                    <h2>Digitally talented with a natural ability to get things done.</h2>
+                    <h2>I am a passionate coder with a natural ability to get things done.</h2>
                 </blockquote>
                 <h3>About me</h3>
                 <p>

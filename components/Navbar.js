@@ -4,7 +4,6 @@ import { Link } from 'react-scroll';
 import Image from "next/image"
 
 export default function Navbar() {
-    const [backArrow, setBackArrow] = useState(false);
     const [clicked, setClicked] = useState(false);
     const [scroll, setScroll] = useState(false);
 
@@ -16,6 +15,7 @@ export default function Navbar() {
         });
       }, []);
 
+
     return (
         <nav className={scroll ? 'navbar nav-scroll' : 'navbar'}>
             <div className="navbar__name" >
@@ -26,7 +26,7 @@ export default function Navbar() {
                     smooth={true}
                     offset={-70}
                     duration={500}>
-                    <h1 className="navbar__text">J</h1>
+                    <h1 className="navbar__text">Joakim</h1>
                 </Link>
             </div>
             <div className={clicked ? "navbar__menu-open" : "navbar__menu-closed"}>
@@ -54,7 +54,7 @@ export default function Navbar() {
                             duration={500}
                             onClick={handleClick}
                         >
-                            Work
+                            Portfolio
                                 </Link>
                     </li>
                     <li className="nav__item">

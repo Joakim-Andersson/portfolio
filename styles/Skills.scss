@@ -85,12 +85,12 @@
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1300px) {
   .skilled {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 60px 0;
+    padding: 60px 60px;
     .skilled__text {
       width: 470px;
       margin: 10px;
@@ -106,3 +106,10 @@
     }
   }
 }
+
+
+@media only screen and (min-width: 1600px) {
+  .skilled {
+      padding: 100px calc(5% + 80px);;
+  }
+  }

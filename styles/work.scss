@@ -22,3 +22,9 @@
         margin: 60px 60px
     }
 }
+@media only screen and (min-width: 1500px) {
+    .work {
+        padding: 10px calc(5% + 50px);
+
+    }
+}
