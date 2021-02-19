@@ -128,6 +128,24 @@ class WithScrollbar extends React.Component {
             <img
               draggable={false}
               style={{ width: "100%" }}
+              src="vegan-flashcard.jpg"
+            />
+            <p className="tool-stack"> Toolstack: Vue </p>
+            <a href="https://vue-flashcard.vercel.app/">
+              <button> Visit site </button>
+            </a>
+          </div>
+          <div class="image-container-text">
+            <h3 className="project-header"> Simple FlashCard App</h3>
+            <p className="project-text"> Flashcard app made with Vue. A fun, playful and interacive app with a focus on Vegan and environmental facts. <br/> New features in progress! </p>
+          </div>
+        </div>
+
+        <div class="image-container increase-size">
+          <div className="imgforbutton">
+            <img
+              draggable={false}
+              style={{ width: "100%" }}
               src="seasonal-produce.jpg"
             />
             <p className="tool-stack"> Toolstack: React - Express  </p>
