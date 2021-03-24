@@ -23,14 +23,20 @@ This portfolio contains:
 - SASS
 - Deployed on Vercel
 
-### My favorite things of the app: The Carousel & Map! 
-![print screen of the project-carousel](/public/read-me/carousel.png)
+### My favorite things of the app: The Carousel & Map! &nbsp;
+
 The carousel showing my past and current project are made using the React framework </br>
 [react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel)
+![print screen of the project-carousel](/public/read-me/carousel.png)
+&nbsp;
+&nbsp;
 
-![print screen of map from contact-section](/public/read-me/map.png)
 The contact section contains an interactive map using the Javascript library [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/). </br> 
 I modified and designed it to my liking on their website, then fetched my own version with an API call.
+![print screen of map from contact-section](/public/read-me/map.png)
+&nbsp;
+&nbsp;
+
 
 ### Roadmap
 
@@ -74,3 +80,8 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Get in contact! 
+
+Please don't hesitate to get in contact if you have any questions or feedback! 
+👉 <a href="https://linkedin.com/in/joakim-per-oskar-andersson/">LinkedIn</a>
