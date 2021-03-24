@@ -5,6 +5,8 @@
 Hello and welcome to the repo for my personal portfolio! </br>
 Check out the portfolio here: [https://Heytherejoakim.com](https://heytherejoakim.com/)
 
+![print screen of portfolio header](/public/read-me/header.png)
+
 ## Description
 
 This portfolio functions as a homepage for people interested in my work. </br>
@@ -22,10 +24,11 @@ This portfolio contains:
 - Deployed on Vercel
 
 ### My favorite things of the app: The Carousel & Map! 
-
-The carousel showing my past and current prooject are made using the React framework </br>
+![print screen of the project-carousel](/public/read-me/carousel.png)
+The carousel showing my past and current project are made using the React framework </br>
 [react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel)
 
+![print screen of map from contact-section](/public/read-me/map.png)
 The contact section contains an interactive map using the Javascript library [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/). </br> 
 I modified and designed it to my liking on their website, then fetched my own version with an API call.
 
