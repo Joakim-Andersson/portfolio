@@ -21,17 +21,19 @@ This portfolio contains:
 - SASS
 - Deployed on Vercel
 
-### Carousel & Map
+### My favorite things of the app: The Carousel & Map! 
 
-The carousel showing my past and current prooject are made using the React framework <b> react-multi-carousel</b>.
+The carousel showing my past and current prooject are made using the React framework </br>
+[react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel)
 
-The contact section contains an interactive Map. I modified and designed it to my liking on their website, then fetched my own version with an API call from <b>mapbox-gl</b>
+The contact section contains an interactive map using the Javascript library [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/). </br> 
+I modified and designed it to my liking on their website, then fetched my own version with an API call.
 
 ### Roadmap
 
 This is the first iteration for this project and any feedback or comment for improvement is highly appreciated.
 
-The next step for this project is to connect it to a CMS-system. This will make it easily maintainable and scalable. I also plan to include a section for Graphic Designs, and a blogsection. 
+The next step for this project is to connect it to a CMS-system. This will make it easily maintainable and scalable. I also plan to include a section for my Graphic Designs, and a Blog-section. 
 
 ## Make it on your own! 
 
