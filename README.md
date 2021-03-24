@@ -27,16 +27,15 @@ This portfolio contains:
 
 The carousel showing my past and current project are made using the React framework </br>
 [react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel)
-![print screen of the project-carousel](/public/read-me/carousel.png)
+<kbd> ![print screen of the project-carousel](/public/read-me/carousel.png) </kbd>
 &nbsp;
 &nbsp;
 
 The contact section contains an interactive map using the Javascript library [Mapbox GL JS](https://docs.mapbox.com/mapbox-gl-js/api/). </br> 
 I modified and designed it to my liking on their website, then fetched my own version with an API call.
-![print screen of map from contact-section](/public/read-me/map.png)
+<kbd> ![print screen of map from contact-section](/public/read-me/map.png) </kbd>
 &nbsp;
 &nbsp;
-
 
 ### Roadmap
 
