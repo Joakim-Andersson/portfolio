@@ -1,3 +1,38 @@
+<h1 align="center">
+  Personal Portfolio
+</h1>
+
+Hello and welcome to the repo for my personal portfolio!
+Check out the portfolio here: [https://Heytherejoakim.com](https://heytherejoakim.com/)
+
+## Description
+
+This portfolio functions as a homepage for people interested in my work. This portfolio contains:
+
+- professional & personal information about me
+- showcase past and current projects
+- contact information
+
+### Tech Stack
+
+- Next.JS
+- React 
+- SASS
+
+### Carousel & Map
+
+The carousel showing my past and current prooject are made using the React framework <b> react-multi-carousel</b>.
+
+The contact section contains an interactive Map. I modified and designed it to my liking on their website, then fetched my own version with an API call from <b>mapbox-gl</b>
+
+### Roadmap
+
+This is the first iteration for this project and any feedback or comment for improvement is highly appreciated.
+
+The next step for this project is to connect it to a CMS-system. This will make it easily maintainable and scalable. I also plan to include a section for Graphic Designs, and a blogsection. 
+
+## Make it on your own! 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
