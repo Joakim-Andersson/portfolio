@@ -2,12 +2,13 @@
   Personal Portfolio
 </h1>
 
-Hello and welcome to the repo for my personal portfolio!
+Hello and welcome to the repo for my personal portfolio! </br>
 Check out the portfolio here: [https://Heytherejoakim.com](https://heytherejoakim.com/)
 
 ## Description
 
-This portfolio functions as a homepage for people interested in my work. This portfolio contains:
+This portfolio functions as a homepage for people interested in my work. </br>
+This portfolio contains:
 
 - professional & personal information about me
 - showcase past and current projects
@@ -18,6 +19,7 @@ This portfolio functions as a homepage for people interested in my work. This po
 - Next.JS
 - React 
 - SASS
+- Deployed on Vercel
 
 ### Carousel & Map
 
