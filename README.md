@@ -5,8 +5,7 @@
 Hello and welcome to the repo for my personal portfolio! </br>
 Check out the portfolio here: [https://Heytherejoakim.com](https://heytherejoakim.com/)
 
-|![print screen of portfolio header](/public/read-me/header.png)|
--
+<kbd> ![print screen of portfolio header](/public/read-me/header.png) </kbd>
 
 ## Description
 
