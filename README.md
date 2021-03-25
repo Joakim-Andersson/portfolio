@@ -1,6 +1,5 @@
-<h1 align="center">
-  Personal Portfolio
-</h1>
+#  Personal Portfolio
+
 
 Hello and welcome to the repo for my personal portfolio! </br>
 Check out the portfolio here: [https://Heytherejoakim.com](https://heytherejoakim.com/)
