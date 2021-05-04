@@ -14,6 +14,7 @@ import "../styles/footer.scss"
 import "../styles/map.scss"
 import 'mapbox-gl/dist/mapbox-gl.css';
 import Head from 'next/head'
+import TagManager from 'react-gtm-module';
 
 import Navbar from "../components/Navbar"
 import Home from "../components/index"
@@ -25,6 +26,13 @@ import Footer from "../components/footer"
 
 
 function MyApp() {
+
+  const tagManagerArgs = {
+    gtmId: 'GTM-PN4GBR7'
+}
+
+TagManager.initialize(tagManagerArgs)
+
   return (
     <div >
       <Head>
