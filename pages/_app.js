@@ -31,8 +31,9 @@ function MyApp() {
     gtmId: 'GTM-PN4GBR7'
 }
 
-TagManager.initialize(tagManagerArgs)
-
+if (process.browser) {
+  TagManager.initialize(tagManagerArgs);
+}
   return (
     <div >
       <Head>
