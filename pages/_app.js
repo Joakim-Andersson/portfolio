@@ -36,7 +36,7 @@ TagManager.initialize(tagManagerArgs)
   return (
     <div >
       <Head>
-        <title>Joakim - Javascript Developer</title>
+        <title>Joakim - Javascript coder</title>
         <link rel="icon" href="/favicon-j.png" />
       </Head>
       <Navbar />
